@@ -1,0 +1,11 @@
+/******************** main section start **************************/
+.hm5-main {
+  padding: 100px 180px 100px 100px;
+  background-color: #1B1A1A; }
+  .hm5-main .overlay-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1; }

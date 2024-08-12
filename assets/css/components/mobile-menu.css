@@ -1,0 +1,143 @@
+/****************** offcanvus start **************/
+.offcanvus-box {
+  width: 425px;
+  z-index: 100;
+  top: 0;
+  right: -430px;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+  transition: var(--transition-base);
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow); }
+  .offcanvus-box.active {
+    right: 0; }
+  .offcanvus-box .offcanvus-close {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: var(--primary-color); }
+    .offcanvus-box .offcanvus-close:hover {
+      color: var(--headings-color); }
+  .offcanvus-box .content-top {
+    text-align: center;
+    padding: 120px 60px 100px; }
+    .offcanvus-box .content-top p {
+      line-height: 26px; }
+  .offcanvus-box .offcanvus-gallery {
+    padding: 0 40px;
+    gap: 10px; }
+    .offcanvus-box .offcanvus-gallery a {
+      width: calc(33% - 6px);
+      overflow: hidden; }
+      .offcanvus-box .offcanvus-gallery a img {
+        max-width: 100%;
+        -webkit-transition: var(--transition-base);
+        -o-transition: var(--transition-base);
+        transition: var(--transition-base); }
+        .offcanvus-box .offcanvus-gallery a img:hover {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+  .offcanvus-box .offcanvus-newsletter {
+    padding: 100px 40px; }
+    .offcanvus-box .offcanvus-newsletter input {
+      -webkit-transition: var(--transition-base);
+      -o-transition: var(--transition-base);
+      transition: var(--transition-base); }
+      .offcanvus-box .offcanvus-newsletter input:focus {
+        border-color: var(--primary-color); }
+  .offcanvus-box .offcanvus-bottom {
+    border-top: 1px solid var(--border-color);
+    padding: 20px 40px; }
+  .offcanvus-box .user-links a {
+    color: var(--primary-color); }
+    .offcanvus-box .user-links a:hover {
+      color: var(--secondary-color); }
+
+.language-switcher button {
+  font-size: 15px; }
+  .language-switcher button img {
+    margin-right: 8px; }
+
+.language-switcher .dropdown-menu {
+  border-radius: 0;
+  border-color: var(--gray-color); }
+  .language-switcher .dropdown-menu li + li {
+    border-top: 1px solid var(--light-color); }
+  .language-switcher .dropdown-menu li a {
+    padding: 4px 12px;
+    display: block;
+    color: var(--primary-color);
+    font-size: 15px; }
+    .language-switcher .dropdown-menu li a img {
+      margin-right: 8px;
+      max-width: 29px; }
+
+/************************ mobile menu start ****************/
+.mobile-menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -310px;
+  background-color: var(--white-color);
+  z-index: 60;
+  padding: 60px 24px;
+  overflow-y: scroll;
+  -webkit-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+  transition: var(--transition-base); }
+  .mobile-menu .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: var(--primary-color); }
+    .mobile-menu .close:hover {
+      color: var(--headings-color); }
+  .mobile-menu .logo {
+    width: 100%;
+    display: block;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px; }
+  .mobile-menu .mobile-nav-menu {
+    margin-top: 32px; }
+    .mobile-menu .mobile-nav-menu li {
+      display: block; }
+      .mobile-menu .mobile-nav-menu li + li {
+        border-top: 1px solid var(--light-stroke); }
+      .mobile-menu .mobile-nav-menu li a {
+        display: block;
+        color: var(--headings-color);
+        padding: 10px 0;
+        font-weight: 600; }
+        .mobile-menu .mobile-nav-menu li a:hover {
+          color: var(--primary-color); }
+      .mobile-menu .mobile-nav-menu li.has-submenu {
+        position: relative; }
+        .mobile-menu .mobile-nav-menu li.has-submenu > i {
+          position: absolute;
+          right: 0;
+          top: 6px;
+          padding: 8px;
+          -webkit-transition: var(--transition-base);
+          -o-transition: var(--transition-base);
+          transition: var(--transition-base); }
+          .mobile-menu .mobile-nav-menu li.has-submenu > i.icon-rotate {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+        .mobile-menu .mobile-nav-menu li.has-submenu > .submenu-wrapper {
+          padding-left: 15px;
+          display: none; }
+  .mobile-menu .mobile-search input {
+    width: 100%; }
+  .mobile-menu .mobile-search button span {
+    padding: 0;
+    width: 50px;
+    height: 50px; }
+  .mobile-menu.active {
+    left: 0; }

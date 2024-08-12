@@ -1,0 +1,137 @@
+.container {
+    max-width: 1304px;
+}
+
+.container-large {
+    max-width: 1344px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.container-1660 {
+    max-width: 1660px;
+    margin: 0 auto;
+}
+
+.primary-bg-color {
+    background-color: var(--primary-color) !important;
+}
+
+.primary-text-color {
+    color: var(--primary-color);
+}
+
+.primary-bg-light {
+    background-color: var(--primary-light);
+}
+
+.spacer {
+    background-color: var(--border-color);
+    height: 1px;
+}
+
+.dark-bg-color {
+    background-color: var(--headings-color);
+}
+
+.text-gray {
+    color: var(--gray-color);
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.light-bg {
+    background-color: var(--light-bg);
+}
+
+.theme-input {
+    width: 100%;
+    padding: 24px 25px;
+    border-radius: 15px;
+    border: 1px solid var(--light-stroke);
+    outline: 0;
+    color: var(--headings-color);
+    transition: var(--transition-base);
+
+    &::placeholder {
+        color: var(--text-color);
+    }
+
+    &:focus {
+        border-color: var(--primary-color);
+    }
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.z-5 {
+    z-index: 5,
+}
+
+.z--1 {
+    z-index: -1;
+}
+
+.bg-light-white {
+    background-color: var(--light-white);
+}
+
+.slider-spacing {
+    .slick-list {
+        margin: 0 -12px;
+
+        .slick-slide {
+            margin: 0 12px;
+        }
+    }
+}
+
+.hm3-light-bg {
+    background-color: var(--hm3-light-bg);
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-headings-color {
+    color: var(--headings-color);
+}
+
+.cursor {
+    background-color: var(--primary-color);
+    z-index: 109;
+    height: 8px;
+    width: 8px;
+}
+
+.cursor2,
+.cursor3 {
+    height: 50px;
+    width: 50px;
+    z-index: 108;
+    transition: all .3s ease-out;
+    border: 1px solid var(--primary-color);
+}
+
+.cursor,
+.cursor2,
+.cursor3 {
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    transition: all .3s linear;
+    opacity: 0;
+}

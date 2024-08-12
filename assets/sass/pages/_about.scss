@@ -1,0 +1,357 @@
+.faq-section {
+  background-color: $bg-white-1;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 70px;
+
+  .testimonial-header {
+    margin-left: 15px;
+  }
+
+  h6 {
+    color: $primary-color;
+    font-size: 20;
+    position: relative;
+    // padding-left: 80px;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   top: 12px;
+    //   width: 73px;
+    //   height: 1px;
+    //   background-color: $primary-color;
+    //   @include screen-768 {
+    //     left: 10px;
+    //   }
+    // }
+
+    @include screen-768 {
+      padding-left: 90px;
+    }
+  }
+
+  h2 {
+    color: $text-shade-300;
+  }
+
+  .faq-img {
+    width: 640px;
+    height: 680px;
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    margin-left: 200px;
+  }
+
+  // .accordians-body {
+  //   background-color: $bg-calcultor-section !important;
+  //   .accordion-item {
+  //     .accordion-header {
+  //       background-color: $bg-calcultor-section;
+  //     }
+  //     .accordion-collapse {
+  //       border: 0;
+  //       background-color: $bg-calcultor-section;
+  //     }
+  //   }
+  //   .accordion-button:focus {
+  //     box-shadow: none;
+  //     border: none;
+  //   }
+  //   .accordion-button:not(.collapsed) {
+  //     background-color: $bg-calcultor-section;
+  //     color: #dc3545;
+  //   }
+  //   .accordion-body {
+  //     padding: 15px;
+  //     // background-color: #f6;
+  //   }
+  //   .accordion-button::after {
+  //     width: auto;
+  //     height: auto;
+  //     content: "+";
+  //     font-size: 40px;
+  //     background-image: none;
+  //     font-weight: 100;
+  //     color: #1b6ce5;
+  //     transform: translateY(-4px);
+  //   }
+  //   .accordion-button:not(.collapsed)::after {
+  //     width: auto;
+  //     height: auto;
+  //     // background-image: none;
+  //     content: "-";
+  //     font-size: 48px;
+  //     transform: translate(-5px, -4px);
+  //     transform: rotate(0deg);
+  //   }
+  // }
+
+  .hyp-accordians {
+    background-color: transparent;
+
+    .accordion-item,
+    .accordion-header,
+    .accordion-button {
+      background-color: transparent;
+      color: $primary-shade-800;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .accordion-body {
+      font-weight: 400;
+      font-size: 18px;
+      color: $text-shade-500;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ccc;
+      border-width: thin;
+    }
+
+    .accordion-button {
+      &:focus {
+        box-shadow: none;
+      }
+
+      &:after {
+        width: auto;
+        height: auto;
+        content: "+";
+        font-size: 40px;
+        background-image: none;
+        font-weight: 300;
+        color: $secondary-shade-800;
+        transform: translateY(-4px);
+      }
+
+      &:not(.collapsed)::after {
+        width: auto;
+        height: auto;
+        // background-image: none;
+        content: "-";
+        font-size: 48px;
+        transform: translate(-5px, -4px);
+        transform: rotate(0deg);
+        color: $secondary-shade-800;
+      }
+    }
+
+    @include portrait-phone {
+      .accordion-button {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .accordion-header,
+      .accordion-body {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @include screen-1700 {
+    .faq-img {
+      width: 590px;
+      height: 675px;
+      margin-left: 115px;
+    }
+  }
+
+  @include screen-1400 {
+    .faq-img {
+      width: 540px;
+      height: 630px;
+      margin-left: 100px;
+    }
+
+    .hyp-accordians {
+      padding-right: 40px;
+    }
+  }
+
+  @include screen-1260 {
+    .faq-img {
+      width: 490px;
+      height: 590px;
+      bottom: 180px;
+      margin-left: 44px;
+    }
+  }
+
+  @include screen-1060 {
+    .faq-img {
+      width: 450px;
+      height: 548px;
+      bottom: 180px;
+      margin-left: 33px;
+    }
+  }
+
+  @include screen-992 {
+    .faq-img {
+      width: 383px;
+      height: 536px;
+      bottom: 207px;
+      margin-left: 33px;
+    }
+  }
+
+  @include screen-820 {
+    .faq-img {
+      width: 380px;
+      height: 500px;
+      bottom: 260px;
+      margin-left: 8px;
+    }
+
+    .accordion-item {
+      font-size: 14px;
+    }
+  }
+
+  @include screen-768 {
+    .faq-img {
+      position: relative;
+      width: 450px;
+      height: 505px;
+      bottom: 55px;
+      margin-left: 90px;
+    }
+  }
+
+  @include portrait-phone {
+    .faq-img {
+      position: relative;
+      width: 350px;
+      height: 405px;
+      bottom: 55px;
+      margin-left: 70px;
+    }
+    .hyp-accordians {
+      padding-right: 10px;
+    }
+  }
+
+  @include screen-460 {
+    .faq-img {
+      position: relative;
+      width: 300px;
+      height: 380px;
+      bottom: 55px;
+      margin-left: 50px;
+    }
+  }
+
+  @include screen-400 {
+    .faq-img {
+      position: relative;
+      width: 250px;
+      height: 330px;
+      bottom: 55px;
+      margin-left: 40px;
+    }
+  }
+  @include screen-360 {
+    .faq-img {
+      position: relative;
+      width: 250px;
+      height: 330px;
+      bottom: 55px;
+      margin-left: 28px;
+    }
+  }
+  @include screen-768 {
+    padding-bottom: 40px;
+  }
+}
+
+.gateways-section {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  background-color: $primary-shade-800;
+  background-size: 100% auto;
+
+  position: relative;
+
+  .wow2 {
+    position: absolute;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
+    @include screen-768 {
+      display: none;
+    }
+  }
+
+  .gateways-section-header {
+    color: $text-color;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 60px;
+
+    h6 {
+      color: $text-color;
+      font-size: 20;
+      position: relative;
+      display: inline-block;
+    }
+
+    p {
+      padding-top: 10px;
+      max-width: 696px;
+      margin: 0 auto;
+      font-weight: 400;
+
+      @include portrait-phone {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .gateways-box {
+    background-color: $primary-color;
+    height: 170px;
+    width: 170px;
+    padding: 45px;
+    border-radius: 50%;
+    border: 1px solid $bg-white-1;
+
+    // max-width: 170px;
+    // margin-right: 24px;
+    @include screen-1260 {
+      padding: 39px;
+      height: 160px;
+      width: 160px;
+    }
+
+    @include large-screen {
+      height: 170px;
+      width: 170px;
+      padding: 45px;
+    }
+
+    @include screen-992 {
+      margin-bottom: 20px;
+    }
+
+    @include screen-900 {
+      padding: 39px;
+      height: 160px;
+      width: 160px;
+    }
+
+    @include screen-820 {
+      padding: 35px;
+      height: 150px;
+      width: 150px;
+    }
+
+    @include screen-460 {
+      margin: 0 auto;
+    }
+  }
+}

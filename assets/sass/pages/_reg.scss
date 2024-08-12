@@ -1,0 +1,195 @@
+.login-section {
+  overflow: hidden;
+  padding-top: 10px;
+
+  .login-banner {
+    width: 1000px;
+    height: 945px;
+    position: absolute;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 120%;
+    }
+  }
+
+  // background-color: $bg-calcultor-section;
+  .login-rows {
+    border-radius: 12px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-bottom: 140px;
+
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .form-section {
+      margin: 0;
+      padding-top: 120px;
+
+      .login-form-main {
+        background-color: $bg-white-1;
+        box-shadow: 15px 15px 40px 0px rgba(0, 0, 0, 0.1),
+          -20px -20px 36px 0px rgba(0, 0, 0, 0.1);
+        padding-bottom: 22px;
+        border-radius: 12px;
+
+        @include screen-992 {
+          border-radius: 12px;
+          overflow: hidden;
+        }
+
+        .login-logo {
+          // padding: 0px 230px;
+          display: flex;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 165px;
+            height: 60px;
+            align-items: center;
+          }
+        }
+
+        h4 {
+          color: $secondary-color;
+          font-weight: 700;
+          line-height: 130%;
+          text-align: center;
+          padding-top: 40px;
+        }
+
+        .login-form-area {
+          padding: 40px 60px 10px 60px;
+
+          .form-outline {
+            margin-bottom: 20px;
+
+            label {
+              color: $secondary-color;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 130%;
+            }
+
+            input {
+              height: 50px;
+              border-radius: 8px;
+              border: 1px solid $secondary-shade-300;
+              background-color: $bg-white-1;
+              color: $secondary-color;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 130%;
+              padding: 0 20px;
+
+              &:focus {
+                border: 1px solid $secondary-shade-400;
+              }
+            }
+
+            ::placeholder {
+              color: $secondary-color;
+            }
+          }
+
+          .login-forgot {
+            padding-top: 3px;
+            text-align: center;
+
+            a {
+              color: $primary-color;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 130%;
+
+              &:hover {
+                color: $secondary-color;
+              }
+            }
+          }
+
+          .form-check {
+            .form-check-input {
+              background-color: $bg-white-1;
+              width: 16px;
+              height: 16px;
+            }
+
+            color: $secondary-color;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+
+            .form-check-label {
+              padding-top: 2px;
+            }
+
+            .termncondition {
+              font-weight: 700;
+              color: $primary-color;
+            }
+          }
+
+          .btn-forms {
+            margin-top: 5px;
+            width: 100%;
+            font-weight: 500;
+          }
+        }
+
+        .social-icon-section {
+          p {
+            color: $secondary-color;
+            font-weight: 500;
+          }
+
+          text-align: center;
+
+          .sign-up-option {
+            padding-top: 20px;
+            font-weight: 400;
+          }
+
+          .sign-up {
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .form-check-input:checked[type="checkbox"] {
+    --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  }
+
+  @include screen-1460 {
+    .login-banner {
+      width: 855px;
+    }
+  }
+
+  @include screen-1290 {
+    .login-banner {
+      width: 800px;
+    }
+  }
+
+  @include screen-992 {
+    .login-banner {
+      display: none;
+    }
+
+    h4 {
+      font-size: 24px;
+    }
+  }
+}

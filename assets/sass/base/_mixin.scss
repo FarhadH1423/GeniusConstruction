@@ -1,0 +1,161 @@
+@mixin screen-330 {
+  @media (max-width: 330px) {
+    @content;
+  }
+}
+
+@mixin screen-360 {
+  @media (max-width: 360px) {
+    @content;
+  }
+}
+
+
+@mixin screen-400 {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin screen-430 {
+  @media (max-width: 430px) {
+    @content;
+  }
+}
+
+
+@mixin screen-460 {
+  @media (max-width: 460px) {
+    @content;
+  }
+}
+
+@mixin screen-520 {
+  @media (max-width: 520px) {
+    @content;
+  }
+}
+
+@mixin portrait-phone {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+
+
+@mixin screen-620 {
+  @media (max-width: 619.98px) {
+    @content;
+  }
+}
+
+@mixin screen-660 {
+  @media (max-width: 658.98px) {
+    @content;
+  }
+}
+
+@mixin screen-700 {
+  @media (max-width: 698.98px) {
+    @content;
+  }
+}
+
+@mixin screen-768 {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin screen-820 {
+  @media (max-width: 819.98px) {
+    @content;
+  }
+}
+
+@mixin screen-900 {
+  @media (max-width: 899.98px) {
+    @content;
+  }
+}
+
+
+@mixin screen-992 {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin screen-1060 {
+  @media (max-width: 1059.98px) {
+    @content;
+  }
+}
+
+@mixin screen-1120 {
+  @media (max-width: 1119.98px) {
+    @content;
+  }
+}
+
+
+
+@mixin large-screen {
+  @media (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin screen-1260 {
+  @media (max-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin screen-1290 {
+  @media (max-width: 1290px) {
+    @content;
+  }
+}
+
+@mixin screen-1400 {
+  @media (max-width: 1399.98px) {
+    @content;
+  }
+}
+
+@mixin screen-1460 {
+  @media (max-width: 1460px) {
+    @content;
+  }
+}
+
+@mixin screen-1600 {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin screen-1700 {
+  @media (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin screen-1800 {
+  @media (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin screen-1860 {
+  @media (max-width: 1860px) {
+    @content;
+  }
+}
+
+@mixin screen-1900 {
+  @media (max-width: 1900px) {
+    @content;
+  }
+}

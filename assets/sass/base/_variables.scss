@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+$primary-shade-50: #ffede5;
+$primary-shade-100: #ffdfd1;
+$primary-shade-200: #ffc0a3;
+$primary-shade-300: #ff9d70;
+$primary-shade-400: #ff7d42;
+$primary-color: #ff5e15;
+$primary-shade-600: #db4400;
+$primary-shade-700: #a33300;
+$primary-shade-800: #702300;
+$primary-shade-900: #381200;
+$primary-shade-950: #1a0800;
+
+$secondary-shade-50: #e5eaff;
+$secondary-shade-100: #d1daff;
+$secondary-shade-200: #a3b4ff;
+$secondary-shade-300: #708bff;
+$secondary-shade-400: #4266ff;
+$secondary-color: #1541ff;
+$secondary-shade-600: #0029db;
+$secondary-shade-700: #001fa3;
+$secondary-shade-800: #001570;
+$secondary-shade-900: #000b38;
+$secondary-shade-950: #00051a;
+
+$span-color: #5f3dc4;
+
+$text-color: #ffffff;
+$text-shade-800: #cccccc;
+$text-shade-700: #999999;
+$text-shade-600: #666666;
+$text-shade-500: #333333;
+$text-shade-400: #191919;
+$text-shade-300: #0d0d0d;
+
+$error-state-color: #f63333;
+$warning-state-color: #f8bf2d;
+$info-state-color: #2f5cfb;
+$success-state-color: #1ec24c;
+$disable-state-color: #d8d8d8;
+
+$bg-dark-1: #030712;
+$bg-dark-2: #161a1e;
+$bg-dark-3: #141c26;
+
+$bg-white-1: #ffffff;
+$bg-white-2: #e0e0e0;
+$bg-white-3: #adadad;
+
+$bg-counter-box: #38117f;
+$bg-calcultor-section: #04032e;
+$bg-disable-form: #35345d;
+$bg-choose-us: #240255;
+$counter-member-bg: rgba(47, 92, 251, 0.1);
+$countries-counter-bg: rgba(9, 232, 227, 0.1);
+$countries-hover: #09e8e3;
+$about-bg: #fffafd;
+$invest-bg: #ebfbee;
+
+// $business-plan: linear-gradient(180deg, #0979B6 0%, #184ACA 108.15%);
+
+$box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+
+$template-font: "Jost", sans-serif;
+$heading-font: "Jost", sans-serif;
+$date-font: "Jost", sans-serif;
+$footer-font: "Jost", sans-serif;
+
+$transition-base: all 0.8s;

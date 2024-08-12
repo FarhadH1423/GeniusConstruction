@@ -1,0 +1,179 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 700;
+}
+
+h1,
+.h1 {
+  font-size: 64px;
+  line-height: 1.2;
+
+  @include screen-768 {
+    font-size: 48px;
+  }
+}
+
+.h2,
+h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+
+  @include screen-768 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+.h3,
+h3 {
+  font-size: 40px;
+  line-height: 1.2;
+
+  @include screen-768 {
+    font-size: 36px;
+    line-height: 1.2em;
+  }
+}
+
+.h4,
+h4 {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 600;
+
+  @include screen-768 {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+}
+
+.h5,
+h5 {
+  font-size: 24px;
+  line-height: 1.3;
+
+  @include screen-768 {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+}
+
+.h6,
+h6 {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+
+  @include screen-768 {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  @include screen-768 {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.fs-18 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.fs-xs {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.fs-xsb {
+  font-size: 12px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.fs-sm {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.fs-smb {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.fs-md {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.fs-mdb {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.fs-lg {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.fs-lgb {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.fs-lg {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.fs-lgb {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.fs-20 {
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.fs-30 {
+  font-size: 30px;
+
+  @include screen-768 {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+}
+
+.fs-40 {
+  font-size: 40px;
+
+  @include screen-768 {
+    font-size: 36px;
+    line-height: 1.2em;
+  }
+}

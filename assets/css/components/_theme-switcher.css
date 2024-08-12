@@ -1,0 +1,123 @@
+/*********************** theme swithcer **********************/
+.color-switcher-btn {
+  position: fixed;
+  top: 35%;
+  left: -40px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-color);
+  color: var(--headings-color);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 0 3px 3px 0;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  -webkit-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+  transition: var(--transition-base); }
+  .color-switcher-btn i {
+    -webkit-animation: 10s rotate linear infinite;
+    animation: 10s rotate linear infinite; }
+  .color-switcher-btn.active {
+    left: 0; }
+  .color-switcher-btn.position-right {
+    right: -40px;
+    left: auto;
+    border-radius: 3px 0 0 3px; }
+    .color-switcher-btn.position-right.active {
+      right: 0;
+      left: auto; }
+
+.theme-color-switch {
+  width: 200px;
+  position: fixed;
+  top: calc(35% + 40px);
+  left: -200px;
+  z-index: 10;
+  background-color: var(--white-color);
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  padding: 16px;
+  border-radius: 0 4px 4px 0;
+  -webkit-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+  transition: var(--transition-base); }
+  .theme-color-switch .color-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6px;
+    margin-top: 15px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .theme-color-switch .color-list li a {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      border-radius: 2px; }
+      .theme-color-switch .color-list li a.purple {
+        background-color: #800080; }
+      .theme-color-switch .color-list li a.red {
+        background-color: #ff0000; }
+      .theme-color-switch .color-list li a.blue {
+        background-color: #0000ff; }
+      .theme-color-switch .color-list li a.orange {
+        background-color: #ffa500; }
+      .theme-color-switch .color-list li a.green {
+        background-color: #008000; }
+      .theme-color-switch .color-list li a.primary {
+        background: #5044EB; }
+  .theme-color-switch .cursor-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px; }
+    .theme-color-switch .cursor-list li a {
+      color: var(--primary-color);
+      width: 30px;
+      height: 30px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border: 1px solid var(--primary-color);
+      border-radius: 50%; }
+      .theme-color-switch .cursor-list li a i {
+        -webkit-transition: var(--transition-base);
+        -o-transition: var(--transition-base);
+        transition: var(--transition-base); }
+      .theme-color-switch .cursor-list li a.cursor-circle i {
+        font-size: 10px; }
+      .theme-color-switch .cursor-list li a:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color); }
+  .theme-color-switch .template-btn {
+    font-size: 12px;
+    padding: 12px 20px;
+    border-radius: 4px; }
+    .theme-color-switch .template-btn::before {
+      left: -50px; }
+  .theme-color-switch.active {
+    left: 0; }
+  .theme-color-switch.position-right {
+    left: auto;
+    right: -200px; }
+    .theme-color-switch.position-right.active {
+      left: auto;
+      right: 0; }

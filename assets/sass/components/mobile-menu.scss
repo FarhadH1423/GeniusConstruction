@@ -1,0 +1,106 @@
+/************************ mobile menu start ****************/
+.mobile-menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -310px;
+  background-color: $bg-white-1;
+  z-index: 60;
+  padding: 60px 24px;
+  overflow-y: scroll;
+  transition: $transition-base;
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: $primary-color;
+
+    &:hover {
+      color: $primary-shade-800;
+    }
+  }
+
+  // .logo {
+  //     width: 100%;
+  //     display: block;
+  //     background-color: var(--primary-color);
+  //     text-align: center;
+  //     padding: 30px;
+  //     border-radius: 10px;
+  // }
+  .mobile-nav-menu {
+    margin-top: 32px;
+
+    li {
+      display: block;
+
+      + li {
+        border-top: 1px solid $primary-color;
+      }
+
+      a {
+        display: block;
+        color: $text-shade-500;
+        padding: 10px 0;
+        font-weight: 600;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      &.has-submenu {
+        position: relative;
+
+        & > i {
+          position: absolute;
+          right: 0;
+          top: 6px;
+          padding: 8px;
+          transition: $transition-base;
+
+          &.icon-rotate {
+            transform: rotate(180deg);
+          }
+        }
+
+        & > .submenu-wrapper {
+          padding-left: 15px;
+          display: none;
+        }
+      }
+    }
+  }
+
+  .mobile-search {
+    input {
+      width: 100%;
+    }
+
+    button {
+      span {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &.active {
+    left: 0;
+  }
+
+  .info-right {
+    margin-top: 20px;
+    display: none;
+
+    @include screen-620 {
+      display: block;
+      ul > li {
+        padding-right: 10px;
+      }
+    }
+  }
+}

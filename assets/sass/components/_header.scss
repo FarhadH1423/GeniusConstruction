@@ -1,0 +1,279 @@
+/*********************** header section ********************/
+.header-section {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0px 8px 36px 0px rgba(0, 0, 0, 0.1);
+
+  @include screen-992 {
+    .crete-navbar {
+      box-shadow: none;
+    }
+  }
+}
+
+.info-bar {
+  padding-top: 18px;
+  padding-bottom: 17px;
+  background-color: $primary-shade-950;
+  @include screen-460 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .info-row {
+    justify-content: space-between;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .info-left {
+    .wows {
+      gap: 32px;
+      display: flex;
+
+      li {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .info-left-icon {
+        padding-bottom: 2px;
+      }
+    }
+  }
+
+  .info-right {
+    .wows {
+      gap: 16px;
+      color: #fff;
+      .fa-brands {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @include screen-1290 {
+    .info-row {
+      padding-right: 40px;
+    }
+  }
+
+  @include screen-992 {
+    .info-row {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @include screen-768 {
+    .info-row {
+      .info-left {
+        .wows {
+          li {
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          gap: 16px;
+        }
+      }
+
+      .info-right {
+        .wows {
+          gap: 8px;
+        }
+      }
+    }
+  }
+
+  @include screen-620 {
+    .info-row {
+      justify-content: center;
+    }
+
+    .info-right {
+      display: none;
+    }
+  }
+
+  @include screen-460 {
+    .info-row {
+      .info-left {
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.header-wrapper {
+  background-color: $bg-white-1;
+}
+
+.container-header {
+  max-width: 1320px;
+  margin: 0 auto;
+  font-family: $template-font;
+}
+
+.crete-navbar {
+  // padding: 0 40px;
+  border-radius: 16px;
+  // box-shadow: $box-shadow;
+  // background-color: red;
+  font-family: $template-font !important;
+
+  col {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  @include screen-992 {
+    padding: 10px;
+  }
+}
+
+.logo-dsgn {
+  // padding-left: 20px;
+  width: 201px;
+  height: 53px;
+
+  @include screen-992 {
+    width: 150px;
+  }
+}
+
+.crete-navmenu {
+  text-align: end;
+
+  & > ul {
+    display: inline-block;
+
+    & > li {
+      & > a {
+        position: relative;
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 25px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     width: 0;
+        //     height: 2px;
+        //     background-color: $secondary-color;
+        //     transition: $transition-base;
+        // }
+        // &:hover {
+        //     &::before {
+        //         width: calc(100% - 32px);
+        //     }
+        // }
+      }
+    }
+
+    li {
+      display: inline-block;
+      position: relative;
+      transition: $transition-base;
+
+      a {
+        display: inline-block;
+        padding: 35px 30px;
+        font-weight: 400;
+        color: $bg-dark-1;
+        text-transform: capitalize;
+        font-size: 18px;
+
+        @include large-screen {
+          padding: 55px 20px;
+        }
+      }
+
+      &.active {
+        & > a {
+          color: $primary-color;
+        }
+
+        &:after,
+        &:before {
+          background-color: $text-color;
+        }
+      }
+
+      &:hover {
+        & > a {
+          color: $primary-color;
+        }
+
+        &:after,
+        &:before {
+          background-color: $text-color;
+        }
+
+        // &::after {
+        //   color: $primary-color;
+        // }
+      }
+    }
+  }
+}
+
+/****************** sticky header ****************/
+.header-sticky {
+  &.sticky-on {
+    position: fixed !important;
+    top: -98px;
+    left: 0;
+    width: 100%;
+    animation: 1s fadeInDown;
+    overflow: visible;
+
+    .infobar {
+      display: none !important;
+    }
+
+    .crete-navbar {
+      padding-top: 38px;
+      // box-shadow: none;
+      box-shadow: 0px 18px 18px -5px rgba(117, 117, 117, 0.48);
+      // box-shadow: $box-shadow;
+      // box-shadow: -40px 109px 141px -23px rgba(214, 214, 214, 1);
+
+      @include screen-992 {
+        padding: 30px;
+
+        .logo-wrapper {
+          padding-top: 14px;
+        }
+
+        .header-toggle {
+          padding-top: 14px;
+        }
+      }
+    }
+
+    .header-template-btn {
+      padding: 16px 40px;
+    }
+
+    .crete-navmenu {
+      a {
+        padding: 50px 26px;
+      }
+    }
+
+    @include screen-992 {
+      position: fixed !important;
+      top: -75px;
+      left: 0;
+      width: 100%;
+      animation: 1s fadeInDown;
+      z-index: 100;
+      z-index: 200;
+    }
+  }
+}

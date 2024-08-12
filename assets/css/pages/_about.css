@@ -1,0 +1,52 @@
+/************************* about section start ************************/
+.ab-years-box {
+  padding: 40px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: var(--primary-shadow);
+  box-shadow: var(--primary-shadow);
+  border-radius: 15px;
+  gap: 10px;
+  left: 0;
+  top: 80px; }
+  .ab-years-box h3 {
+    color: var(--white-color); }
+  .ab-years-box p {
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.crb-brand-area {
+  padding: 100px; }
+
+.crb-brand-slider .single-item {
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 32px 40px;
+  border-radius: 15px; }
+  .crb-brand-slider .single-item img {
+    display: inline-block; }
+
+.crb-brand-slider .prev-btn, .crb-brand-slider .next-btn {
+  position: absolute;
+  right: 0;
+  top: -120px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 50%;
+  -webkit-transition: var(--transition-base);
+  -o-transition: var(--transition-base);
+  transition: var(--transition-base); }
+  .crb-brand-slider .prev-btn:hover, .crb-brand-slider .next-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color); }
+
+.crb-brand-slider .prev-btn {
+  right: 75px; }

@@ -1,0 +1,148 @@
+.footers-section {
+  background-color: $primary-color;
+  overflow: hidden;
+}
+.wow1 {
+  position: absolute;
+  opacity: 0.1;
+  width: 100%;
+}
+
+.footer-section {
+  padding-bottom: 10px;
+  .footer-tops {
+    padding-bottom: 50px;
+  }
+
+  .footer-section-row {
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 70px;
+    .footer-logo {
+      margin-bottom: 22px;
+      img {
+        width: 110px;
+        height: 40px;
+      }
+    }
+    .footer-social {
+      img {
+        padding-right: 12px;
+        @include large-screen {
+          padding-right: 5px;
+        }
+        @include screen-1060 {
+          padding-right: 2px;
+        }
+        @include screen-768 {
+          padding-right: 8px;
+        }
+      }
+    }
+    @include screen-768 {
+      p {
+        font-size: 16px;
+      }
+    }
+    .footer-links {
+      h5 {
+        color: $text-color;
+      }
+      hr {
+        color: $text-color;
+        border: 1px solid $text-color;
+
+        display: inline-block;
+        width: 140px;
+      }
+      .footer-company-hr {
+        color: $text-color;
+        border: 1px solid $text-color;
+
+        display: inline-block;
+        width: 110px;
+      }
+      ul > li {
+        margin-bottom: 2px;
+        line-height: 37px;
+        font-weight: 300;
+        font-family: $footer-font;
+        font-style: normal;
+        a {
+          color: $text-color;
+          font-size: 18px;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+      @include screen-768 {
+        h5 {
+          font-size: 20px;
+        }
+        ul > li {
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .footer-contact {
+      h5 {
+        color: $text-color;
+      }
+      color: white;
+      .footer-contact-hr {
+        color: $text-color;
+        border: 1px solid $text-color;
+        display: inline-block;
+        width: 127px;
+      }
+      ul > li {
+        margin-bottom: 2px;
+        line-height: 37px;
+        font-weight: 300;
+        font-family: $footer-font;
+        font-style: normal;
+        color: $text-color;
+        font-size: 18px;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      @include screen-768 {
+        h5 {
+          font-size: 20px;
+        }
+        ul > li {
+          font-size: 16px;
+        }
+      }
+    }
+    @include portrait-phone {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  .bottom-footer-top-hr {
+    color: $text-color;
+    width: 100%;
+  }
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    @include portrait-phone {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+}

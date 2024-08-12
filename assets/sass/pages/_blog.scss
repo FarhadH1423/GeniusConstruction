@@ -1,0 +1,317 @@
+.blog-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: $bg-white-1;
+  position: relative;
+  overflow: hidden;
+
+  .blog-top-shape {
+    position: absolute;
+    top: 36px;
+    left: 0;
+
+    @include screen-820 {
+      width: 80px;
+      height: 160px;
+    }
+
+    @include screen-460 {
+      display: none;
+    }
+  }
+
+  .blog-bottom-shape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @include portrait-phone {
+      display: none;
+    }
+  }
+
+  .blog-section-header {
+    color: $text-color;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 60px;
+
+    h6 {
+      color: $primary-color;
+      font-size: 20;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2 {
+      color: $text-shade-300;
+    }
+
+    p {
+      padding-top: 10px;
+      max-width: 696px;
+      margin: 0 auto;
+      font-weight: 400;
+      color: $text-shade-400;
+
+      @include portrait-phone {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .blog-post {
+    .blog-row {
+      padding-left: 72px;
+      padding-right: 72px;
+
+      .indv-blog {
+        padding-bottom: 70px;
+      }
+
+      img {
+        width: 100%;
+        height: 504px;
+      }
+
+      .blog-content {
+        width: 100%;
+        position: relative;
+
+        .blog-info {
+          p {
+            color: $text-shade-600;
+            font-size: 16px;
+            font-weight: 400;
+            padding-left: 32px;
+          }
+
+          svg {
+            position: absolute;
+            top: 17px;
+          }
+
+          .author,
+          .date {
+            &::after {
+              position: absolute;
+              content: "|";
+              top: 11px;
+              color: $text-shade-600;
+              margin-left: 151px;
+              font-size: 26px;
+
+              @include large-screen {
+                display: none;
+              }
+            }
+          }
+        }
+
+        @include screen-460 {
+          .blog-info {
+            p {
+              font-size: 14px;
+              padding-left: 22px;
+            }
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        @include screen-400 {
+          .blog-info {
+            p {
+              font-size: 12px;
+              padding-left: 22px;
+            }
+
+            svg {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+
+      h5 {
+        padding-top: 10px;
+        color: $text-shade-300;
+      }
+
+      p {
+        padding-top: 18px;
+        color: $text-shade-400;
+      }
+
+      .read-more-btn {
+        a {
+          font-size: 16px;
+          color: $primary-color;
+          font-weight: 500;
+        }
+
+        display: block;
+        padding-left: 40px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 64%;
+          left: 0;
+          width: 30px;
+          height: 2px;
+          background-color: $text-shade-300;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 64%;
+          right: 0;
+          width: 30px;
+          height: 2px;
+          background-color: $text-shade-300;
+        }
+      }
+
+      @include screen-1290 {
+        h4 {
+          font-size: 26px;
+        }
+
+        h6 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .read-more-btn {
+          font-size: 14px;
+        }
+      }
+
+      @include screen-992 {
+        h4 {
+          font-size: 30px;
+        }
+
+        h6 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+        .read-more-btn {
+          font-size: 16px;
+        }
+      }
+
+      @include screen-620 {
+        h4 {
+          font-size: 26px;
+        }
+
+        h6 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .read-more-btn {
+          font-size: 14px;
+        }
+      }
+
+      @include portrait-phone {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h4 {
+          font-size: 22px;
+        }
+
+        h6 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .read-more-btn {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .blog-pagination {
+    justify-content: center;
+    text-align: center;
+    padding-right: 10px;
+
+    ul > li {
+      display: inline-block;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Jost;
+      color: $text-color;
+      padding: 12px 16px;
+      border-radius: 5px;
+      font-weight: 400;
+    }
+
+    .active {
+      background-color: $primary-color;
+      height: 48px;
+      width: 48px;
+
+      a {
+        color: $text-color;
+      }
+    }
+
+    .deactive {
+      border: 1px solid $text-shade-700;
+      height: 48px;
+      width: 48px;
+      color: $secondary-color;
+
+      a {
+        color: $secondary-color;
+      }
+    }
+
+    @include portrait-phone {
+      h5 {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+      }
+    }
+
+    @include screen-400 {
+      h5 {
+        font-size: 14px;
+        font-weight: 300;
+        padding: 6px;
+      }
+    }
+  }
+
+  @include screen-768 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

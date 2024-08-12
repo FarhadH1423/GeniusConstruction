@@ -1,0 +1,23 @@
+.error-section {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  overflow: hidden;
+
+  .error-btn {
+    margin-top: 60px;
+
+    @include screen-768 {
+      margin-top: 40px;
+    }
+
+    @include screen-460 {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+  }
+
+  @include screen-768 {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}

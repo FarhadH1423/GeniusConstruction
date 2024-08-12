@@ -1,0 +1,499 @@
+.calculator-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-size: 100% auto;
+  position: relative;
+
+  .calculator-top-shape {
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+    @include screen-1460 {
+      width: 80px;
+      height: 170px;
+    }
+
+    @include screen-1400 {
+      width: 60px;
+      height: 150px;
+    }
+  }
+
+  .calculator-section-image {
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    // object-fit: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  .calcultor-row {
+    padding-left: 72px;
+    padding-right: 72px;
+
+    @include portrait-phone {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  h6 {
+    color: $primary-color;
+    font-size: 20;
+    position: relative;
+    padding-left: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 73px;
+      height: 1px;
+      background-color: $primary-color;
+    }
+  }
+
+  h2 {
+    color: $text-shade-300;
+  }
+
+  .calculate-span {
+    color: $span-color;
+  }
+
+  .calculator-paragraph {
+    color: $text-shade-300;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+
+  .calcultor-img {
+    width: 740px;
+    height: 730px;
+    position: absolute;
+    right: 100px;
+    bottom: 140px;
+    margin-left: 145px;
+  }
+
+  .form-areas {
+    background-color: $primary-shade-700;
+    // border-bottom: 1px solid $primary-color;
+    // border-left: 1px solid $primary-color;
+    padding: 25px;
+    border-radius: 16px;
+
+    position: relative;
+
+    padding: 25px;
+    box-sizing: border-box;
+
+    .form-feild {
+      padding: 30px;
+
+      .form-inpt {
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 5px;
+        color: $text-color;
+        font-size: 16px;
+
+        .form-control {
+          &:focus {
+            box-shadow: none;
+            border-color: $text-shade-300;
+          }
+        }
+
+        .forms {
+          height: 50px;
+          background-color: $bg-white-1;
+          color: $text-shade-300;
+
+          &::placeholder {
+            color: $text-shade-300;
+            font-size: 16px;
+          }
+        }
+
+        .disable-forms {
+          height: 50px;
+          background-color: $primary-shade-400;
+          color: $text-shade-300;
+
+          &::placeholder {
+            color: $text-shade-300;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .btn-forms {
+        width: 100%;
+        margin-top: 20px;
+        // margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include screen-1860 {
+    .calcultor-img {
+      width: 740px;
+      height: 730px;
+      position: absolute;
+      right: 40px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    .form-areas {
+      padding: 20px;
+      left: 0px;
+    }
+  }
+
+  @include screen-1600 {
+    .calcultor-img {
+      width: 725px;
+      height: 712px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    .form-areas {
+      padding: 16px;
+    }
+  }
+
+  @include screen-1460 {
+    .calcultor-img {
+      width: 706px;
+      height: 693px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    .form-areas {
+      padding: 10px;
+    }
+  }
+
+  @include screen-1400 {
+    .calcultor-img {
+      width: 665px;
+      height: 670px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    .form-areas {
+      padding: 10px;
+    }
+  }
+
+  @include screen-1290 {
+    .calcultor-img {
+      width: 603px;
+      height: 650px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    .form-areas {
+      padding: 10px;
+    }
+  }
+
+  @include screen-1260 {
+    .calcultor-img {
+      width: 603px;
+      height: 650px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    .form-areas {
+      padding: 10px;
+    }
+  }
+
+  @include large-screen {
+    .calcultor-img {
+      width: 560px;
+      height: 650px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    .form-areas {
+      padding: 10px;
+    }
+  }
+
+  @include screen-1060 {
+    .calcultor-img {
+      width: 521px;
+      height: 632px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    .form-areas {
+      padding: 10px;
+    }
+  }
+
+  @include screen-992 {
+    overflow: hidden;
+
+    .calcultor-img {
+      width: 485px;
+      height: 600px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h6 {
+      font-size: 18px;
+    }
+
+    .calculator-paragraph {
+      font-size: 16px;
+    }
+
+    .form-areas {
+      padding: 0px;
+    }
+  }
+
+  @include screen-900 {
+    overflow: hidden;
+
+    .calcultor-img {
+      width: 460px;
+      height: 594px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h6 {
+      font-size: 18px;
+    }
+
+    .calculator-paragraph {
+      font-size: 16px;
+    }
+
+    .form-areas {
+      padding: 0px;
+    }
+  }
+
+  @include screen-820 {
+    overflow: hidden;
+
+    .calcultor-img {
+      width: 440px;
+      height: 581px;
+      position: absolute;
+      right: 0px;
+      bottom: 140px;
+      margin-left: 145px;
+    }
+  }
+
+  @include screen-768 {
+    padding-top: 10px;
+    padding-bottom: 70px;
+
+    h2 {
+      font-size: 30px;
+      padding-bottom: 0;
+    }
+
+    h6 {
+      font-size: 18px;
+      padding-bottom: 0;
+    }
+
+    .calcultor-img {
+      width: 538px;
+      height: 637px;
+      position: relative;
+      right: -195px;
+      transform: translateX(-50%);
+      top: 30px;
+      bottom: 420px;
+    }
+
+    .calculation-details {
+      padding: 30px;
+      padding-top: 70px;
+
+      .calculator-paragraph {
+        color: $text-shade-300;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include screen-620 {
+    padding-top: 10px;
+    padding-bottom: 70px;
+
+    h2 {
+      font-size: 30px;
+      padding-bottom: 0;
+    }
+
+    h6 {
+      font-size: 18px;
+      padding-bottom: 0;
+    }
+
+    .calcultor-img {
+      width: 538px;
+      height: 637px;
+      position: relative;
+      right: -140px;
+      transform: translateX(-50%);
+      top: 30px;
+      bottom: 420px;
+    }
+
+    .calculation-details {
+      padding: 30px;
+      padding-top: 70px;
+
+      .calculator-paragraph {
+        color: $text-shade-300;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include portrait-phone {
+    padding-top: 10px;
+    padding-bottom: 70px;
+
+    .calcultor-img {
+      width: 484px;
+      height: 557px;
+      position: relative;
+      right: -129px;
+      transform: translateX(-50%);
+      top: 30px;
+      bottom: 420px;
+    }
+
+    .calculation-details {
+      padding: 10px;
+      padding-top: 70px;
+    }
+  }
+
+  @include screen-520 {
+    padding-top: 0px;
+    padding-bottom: 70px;
+
+    .calcultor-img {
+      width: 456px;
+      height: 520px;
+      position: relative;
+      right: -80px;
+      transform: translateX(-50%);
+      top: 30px;
+      bottom: 420px;
+    }
+  }
+
+  @include screen-460 {
+    padding-top: 10px;
+    padding-bottom: 70px;
+
+    .calcultor-img {
+      width: 370px;
+      height: 465px;
+      position: relative;
+      right: -56px;
+      transform: translateX(-50%);
+
+      top: 30px;
+      bottom: 420px;
+    }
+
+    .calculation-details {
+      padding: 10px;
+      padding-top: 70px;
+
+      .calculator-paragraph {
+        color: $text-shade-300;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+
+    .form-areas {
+      .form-feild {
+        .form-inpt {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .btn-forms {
+      font-size: 14px;
+    }
+
+    .form-btn {
+      padding: 14px 14px;
+    }
+  }
+
+  @include screen-400 {
+    .calcultor-img {
+      width: 290px;
+      height: 396px;
+      position: relative;
+      right: -20px;
+      transform: translateX(-50%);
+
+      top: 30px;
+      bottom: 420px;
+    }
+  }
+}
