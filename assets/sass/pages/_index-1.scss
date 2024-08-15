@@ -12,6 +12,26 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  .hero-row {
+    @include screen-1400 {
+      padding-left: 10px;
+      // padding-right: 10px;
+    }
+    @include screen-992 {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include portrait-phone {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .btn-wrapper {
+    margin-top: 35px;
+    @include portrait-phone
+  }
+
   // my code start
   .hero-shapes1 {
     position: absolute;
@@ -96,36 +116,33 @@
       }
     }
 
-    @include screen-768 {
-      width: initial;
+    h6 {
+      color: $bg-dark-1;
+      padding-top: 120px;
+      font-weight: 500;
+      text-transform: uppercase;
     }
-  }
 
-  h6 {
-    color: $bg-dark-1;
-    padding-top: 80px;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-
-  .hero-p {
-    padding-top: 10px;
-    width: 100%;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    color: $bg-dark-1;
-    position: relative;
-    margin-left: -12px;
-    &::before {
-      content: ""; // Create an empty content for the pseudo-element
-      position: absolute;
-      left: -20px; // Position the line 20px to the left of the text (adjust as needed)
-      top: 0;
-      height: 100%; // Match the height of the text
-      width: 4px; // Width of the vertical line
-      background-color: $primary-color; // Change this to your desired color
+    .hero-p {
+      padding-top: 10px;
+      width: 95%;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      color: $bg-dark-1;
+      position: relative;
+      margin-left: 25px;
+      &::before {
+        content: ""; // Create an empty content for the pseudo-element
+        position: absolute;
+        left: -20px; // Position the line 20px to the left of the text (adjust as needed)
+        top: 0;
+        height: 85%; // Match the height of the text
+        width: 4px; // Width of the vertical line
+        background-color: $primary-color; // Change this to your desired color
+        margin-top: 13px;
+      }
     }
   }
 
@@ -133,312 +150,301 @@
     margin-top: 40px;
   }
 
-  @include screen-1900 {
-    background-position: center bottom;
-    background-size: cover;
-  }
-
-  @include screen-1700 {
-    .hero-section-img {
-      right: 100px;
-    }
-  }
-
   @include screen-1600 {
-    .hero-section-img {
-      right: 50px;
+    .hero-content {
+      .hero-header {
+        font-size: 50px;
+      }
+      h6 {
+        font-size: 20px;
+      }
+      .hero-p {
+        font-size: 16px;
+        line-height: 28px;
+      }
     }
-  }
 
-  @include screen-1460 {
-    .hero-section-img {
-      right: 20px;
-    }
-
-    .hero-shapes {
+    .hero-shapes1 {
       position: absolute;
-      top: 26%;
-      left: 45%;
+      right: 0;
+      top: 0;
+      width: 470px;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .img-wrapper-1 {
+      .hero-section-img-1 {
+        width: 560px;
+        height: 630px;
+      }
+
+      .experince-box {
+        padding: 16px 32px;
+
+        background-color: $bg-white-1;
+        box-shadow: -4px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        z-index: 20; // Ensure it is above the image
+        border-radius: 8px; // Optional: Add some styling to make it look better
+
+        h2 {
+          color: $primary-color;
+          margin-bottom: 0; // Remove bottom margin
+        }
+
+        p {
+          margin-top: 4px; // Add margin to separate the text
+          line-height: 1.2; // Adjust the line height
+          color: $bg-dark-1;
+        }
+      }
     }
   }
-
   @include screen-1400 {
-    .hero-section-img {
-      right: 20px;
+    .hero-content {
+      .hero-header {
+        font-size: 50px;
+      }
+      h6 {
+        font-size: 20px;
+      }
+      .hero-p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    .hero-shapes1 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 450px;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .hero-shapes {
+      width: 330px;
+      height: 680px;
+    }
+
+    .img-wrapper-1 {
+      .hero-section-img-1 {
+        width: 460px;
+        height: 570px;
+      }
+
+      .experince-box {
+        padding: 16px 32px;
+
+        background-color: $bg-white-1;
+        box-shadow: -4px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        z-index: 20; // Ensure it is above the image
+        border-radius: 8px; // Optional: Add some styling to make it look better
+
+        h2 {
+          color: $primary-color;
+          margin-bottom: 0; // Remove bottom margin
+        }
+
+        p {
+          margin-top: 4px; // Add margin to separate the text
+          line-height: 1.2; // Adjust the line height
+          color: $bg-dark-1;
+        }
+      }
     }
   }
-
-  @include screen-1290 {
-    .hero-section-img {
-      right: 0px;
-      bottom: 100px;
-      height: 575px;
-      width: 560px;
-    }
-  }
-
   @include large-screen {
-    .hero-section-img {
-      right: 0px;
-      bottom: 100px;
-      height: 562px;
-      width: 480px;
+    .hero-content {
+      .hero-header {
+        font-size: 46px;
+      }
+      h6 {
+        font-size: 18px;
+      }
+      .hero-p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    .hero-shapes1 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 350px;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .img-wrapper-1 {
+      .hero-section-img-1 {
+        width: 430px;
+        height: 530px;
+      }
+
+      .experince-box {
+        padding: 12px 24px;
+
+        background-color: $bg-white-1;
+        box-shadow: -4px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        z-index: 20; // Ensure it is above the image
+        border-radius: 8px; // Optional: Add some styling to make it look better
+
+        h2 {
+          color: $primary-color;
+          margin-bottom: 0; // Remove bottom margin
+          font-size: 30px;
+        }
+
+        p {
+          margin-top: 4px; // Add margin to separate the text
+          line-height: 1.2; // Adjust the line height
+          color: $bg-dark-1;
+          font-size: 14px;
+        }
+      }
     }
   }
-
-  @include screen-1120 {
-    overflow: hidden;
-
-    .hero-section-img {
-      right: -12px;
-      bottom: 117px;
-      height: 530px;
-      width: 420px;
-    }
-  }
-
   @include screen-1060 {
-    overflow: hidden;
-
     .hero-content {
-      width: 500px;
-      padding-top: 232px;
-
-      h1 {
-        font-size: 42px;
+      .hero-header {
+        font-size: 44px;
       }
-
-      p {
+      h6 {
         font-size: 18px;
       }
+      .hero-p {
+        font-size: 16px;
+        line-height: 28px;
+      }
     }
 
-    .hero-p {
-      width: 500px;
+    .hero-shapes1 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 300px;
+      height: 100%;
+      z-index: 0;
     }
 
-    .hero-section-img {
-      right: -4px;
-      bottom: 117px;
-      height: 526px;
-      width: 429px;
+    .img-wrapper-1 {
+      .hero-section-img-1 {
+        width: 430px;
+        height: 530px;
+      }
+
+      .experince-box {
+        padding: 12px 24px;
+        left: -55px;
+        background-color: $bg-white-1;
+        box-shadow: -4px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        z-index: 20; // Ensure it is above the image
+        border-radius: 8px; // Optional: Add some styling to make it look better
+
+        h2 {
+          color: $primary-color;
+          margin-bottom: 0; // Remove bottom margin
+          font-size: 30px;
+        }
+
+        p {
+          margin-top: 4px; // Add margin to separate the text
+          line-height: 1.2; // Adjust the line height
+          color: $bg-dark-1;
+          font-size: 14px;
+        }
+      }
     }
   }
-
   @include screen-992 {
-    overflow: hidden;
+    .hero-content {
+      .hero-header {
+        font-size: 50px;
+      }
+      h6 {
+        font-size: 20px;
+        padding-top: 30px;
+      }
+      .hero-p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
 
-    .hero-section-img {
+    .hero-shapes1 {
       display: none;
     }
 
-    .hero-content {
-      width: 100%;
-      padding-top: 269px;
-      // margin-left: 72px;
-      color: $secondary-color;
-
-      .hero-header {
-        padding-top: 24px;
+    .img-wrapper-1 {
+      .hero-section-img-1 {
+        display: none;
       }
 
-      h1 {
-        font-size: 50px;
+      .experince-box {
+        display: none;
       }
-
-      .hero-p {
-        width: 100%;
-      }
-    }
-
-    .hero-p {
-      padding-top: 25px;
-      width: 532px;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 32px;
-      color: $secondary-color;
     }
   }
 
-  @include screen-768 {
-    .hero-section-img {
-      display: none;
-    }
-
+  @include screen-700 {
     .hero-content {
-      width: 100%;
-      padding-top: 269px;
-      // margin-left: 72px;
-      color: $secondary-color;
-
       .hero-header {
-        padding-top: 24px;
-        font-size: 50px;
+        font-size: 44px;
       }
-
-      h1 {
-        font-size: 50px;
-      }
-
-      .hero-p {
-        width: 100%;
-      }
-    }
-
-    .hero-p {
-      padding-top: 25px;
-      width: 532px;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 32px;
-      color: $secondary-color;
-    }
-  }
-
-  @include portrait-phone {
-    height: 760px;
-
-    .hero-shapes {
-      display: none;
-    }
-
-    .hero-row {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    .hero-content {
-      width: 100%;
-      padding-top: 200px;
-      // margin-left: 72px;
-      color: $secondary-color;
-
-      .hero-header {
-        padding-top: 24px;
-        font-size: 40px;
-      }
-
-      h1 {
-        font-size: 40px;
-      }
-
-      p {
+      h6 {
         font-size: 18px;
+        padding-top: 30px;
       }
-
       .hero-p {
-        width: 100%;
+        font-size: 16px;
+        line-height: 28px;
       }
     }
 
-    .hero-btn {
-      text-align: center;
-    }
-
-    .hero-p {
-      padding-top: 25px;
-      width: 532px;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 32px;
-      color: $secondary-color;
-    }
-  }
-
-  @include screen-460 {
-    height: 720px;
-
-    .hero-shapes {
+    .hero-shapes1 {
       display: none;
     }
 
-    .hero-row {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    .hero-content {
-      width: 100%;
-      padding-top: 200px;
-      // margin-left: 72px;
-      color: $secondary-color;
-
-      .hero-header {
-        padding-top: 24px;
-        font-size: 26px;
+    .img-wrapper-1 {
+      .hero-section-img-1 {
+        display: none;
       }
 
-      h1 {
-        font-size: 36px;
+      .experince-box {
+        display: none;
       }
-
-      p {
-        font-size: 16px;
-      }
-
-      .hero-p {
-        width: 100%;
-      }
-    }
-
-    .hero-btn {
-      text-align: center;
-    }
-
-    .hero-p {
-      padding-top: 25px;
-      width: 532px;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 32px;
-      color: $secondary-color;
     }
   }
+  @include portrait-phone {
+    .hero-content {
+      .hero-header {
+        font-size: 34px;
+      }
+      h6 {
+        font-size: 16px;
+        padding-top: 30px;
+      }
+      .hero-p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
 
-  @include screen-400 {
-    padding-left: 0px;
-    padding-right: 0px;
-
-    .hero-section-img {
+    .hero-shapes1 {
       display: none;
     }
 
-    .hero-content {
-      width: 100%;
-      padding-top: 200px;
-      // margin-left: 72px;
-      color: $secondary-color;
-
-      .hero-header {
-        padding-top: 24px;
+    .img-wrapper-1 {
+      .hero-section-img-1 {
+        display: none;
       }
 
-      h1 {
-        font-size: 30px;
+      .experince-box {
+        display: none;
       }
-
-      p {
-        font-size: 16px;
-      }
-
-      .hero-p {
-        width: 100%;
-      }
-    }
-
-    .hero-p {
-      padding-top: 25px;
-      width: 532px;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 32px;
-      color: $secondary-color;
     }
   }
 }

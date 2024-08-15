@@ -43,6 +43,10 @@
   // border-radius: 12px;
   overflow: hidden;
   transition: $transition-base;
+  @include portrait-phone {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
 }
 
 .form-btn {
@@ -376,14 +380,14 @@
     top: -136%;
     width: 170%;
     height: 136%;
-    background-color: $bg-white-1;
+    background-color: $primary-color;
     z-index: -1;
     border-radius: 50%;
     transition: $transition-base;
   }
 
   &:hover {
-    color: $text-shade-300;
+    color: $text-color;
 
     &::before {
       top: -10px;
