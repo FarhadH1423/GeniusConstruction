@@ -29,7 +29,7 @@
 
   .btn-wrapper {
     margin-top: 35px;
-    @include portrait-phone
+    @include portrait-phone;
   }
 
   // my code start
@@ -110,6 +110,7 @@
       padding-top: 5px;
       font-size: 60px;
       line-height: 1.2;
+      color: $primary-shade-950;
 
       .hero-span {
         color: #5f3dc4;
@@ -718,280 +719,355 @@
 
 // About Us Section
 
-.about-us-section {
+.about-section {
   padding-top: 120px;
   padding-bottom: 120px;
   overflow: hidden;
   position: relative;
+  background-color: #fff9f3;
 
-  .about-shape-top {
-    position: absolute;
-    top: 40px;
-    left: 10%;
-  }
-
-  .about-shape-bottom {
-    position: absolute;
-    bottom: 53px;
-    right: 0px;
-  }
-
-  .about-img {
-    position: absolute;
-    left: -115px;
-    bottom: 0;
-    height: 680px;
-    width: 620px;
-  }
-
-  .about-us-row {
-    padding-left: 72px;
-    padding-right: 72px;
-
-    @include portrait-phone {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  h6 {
-    color: $primary-color;
-  }
-
-  h2 {
-    color: $text-shade-300;
-  }
-
-  .about-span {
-    color: $span-color;
-  }
-
-  .about-paragraph {
-    color: $text-shade-300;
-    font-weight: 400;
-    font-size: 16px;
-    padding-bottom: 12px;
-  }
-
-  .about-short {
-    padding-bottom: 24px;
-
-    .license-img {
-      width: 100px;
-      height: 100px;
-      padding: 20px;
-      border-radius: 50px;
+  .img-wrapper-1 {
+    position: relative;
+    left: -200px;
+    z-index: 1;
+    .about-img {
+      width: 740px;
+      height: 571px;
+      // transform: translateX(25%);
     }
 
-    .short-details {
-      padding-left: 16px;
+    .experince-box {
+      position: absolute;
+      padding: 16px 32px;
+      text-align: center;
+      top: 5%;
+      right: 8%;
+      background-color: $primary-color;
+      box-shadow: -4px 4px 30px 0px rgba(0, 0, 0, 0.08);
+      z-index: 20; // Ensure it is above the image
+      border-radius: 8px; // Optional: Add some styling to make it look better
+
+      h2 {
+        color: $bg-white-1;
+        margin-bottom: 0; // Remove bottom margin
+      }
 
       p {
-        color: #3a4b68;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.7;
+        margin-top: 4px; // Add margin to separate the text
+        line-height: 1.2; // Adjust the line height
+        color: $bg-white-1;
+        white-space: nowrap;
       }
     }
   }
 
-  .license-details-head {
-    color: #18bdca;
-  }
-
-  .license-bg {
-    background: rgba(24, 189, 202, 0.1);
-  }
-
-  .saving-bg {
-    background: rgba(250, 183, 87, 0.1);
-  }
-
-  .saving-details-head {
-    color: #fab757;
-  }
-
-  .innovate-details-head {
-    color: #fd3392;
-  }
-
-  .innovate-bg {
-    background: rgba(253, 51, 146, 0.1);
-  }
-
-  .about-btn {
-    padding-top: 25px;
-  }
-
-  @include screen-1600 {
-    .about-img {
-      position: absolute;
-      left: -40px;
-      bottom: 0;
-      height: 680px;
-      width: 620px;
+  .about-content {
+    p {
+      color: $bg-dark-1;
+    }
+    .about-p {
+      padding-top: 10px;
+      width: 95%;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      color: $bg-dark-1;
+      position: relative;
+      margin-left: 25px;
+      .single-point {
+        gap: 10px;
+      }
+      &::before {
+        content: ""; // Create an empty content for the pseudo-element
+        position: absolute;
+        left: -20px; // Position the line 20px to the left of the text (adjust as needed)
+        top: 0;
+        height: 85%; // Match the height of the text
+        width: 4px; // Width of the vertical line
+        background-color: $primary-color; // Change this to your desired color
+        margin-top: 13px;
+      }
     }
   }
 
-  @include screen-1460 {
-    .about-img {
-      position: absolute;
-      left: 5px;
-      bottom: 0;
-      height: 665px;
-      width: 610px;
+  @include screen-1700 {
+    .img-wrapper-1 {
+      right: 42%;
+      z-index: 1;
+      margin-left: 10px;
+      .about-img {
+        width: 640px;
+        height: 571px;
+        transform: translateX(36%);
+      }
+      .experince-box {
+        padding: 16px 32px;
+        top: 5%;
+        left: 80%;
+      }
     }
   }
-
   @include screen-1400 {
-    .about-img {
-      position: absolute;
-      left: 30px;
-      bottom: 0;
-      height: 634px;
-      width: 575px;
-    }
-  }
+    .img-wrapper-1 {
+      // margin-top: 30px;
+      right: 42%;
+      z-index: 1;
+      margin-left: 10px;
+      .about-img {
+        width: 600px;
+        height: 530px;
+        transform: translateX(36%);
+      }
+      .experince-box {
+        padding: 10px 20px;
+        top: 10%;
+        left: 80%;
+        h2 {
+          color: $bg-white-1;
+          margin-bottom: 0; // Remove bottom margin
+          font-size: 30px;
+        }
 
-  @include large-screen {
-    .about-img {
-      position: absolute;
-      left: 7px;
-      bottom: 20px;
-      height: 580px;
-      width: 510px;
-    }
-
-    h2 {
-      font-size: 40px;
-    }
-
-    h6 {
-      font-size: 16px;
-    }
-
-    .about-paragraph {
-      font-size: 14px;
-    }
-
-    .template-btn {
-      font-size: 14px;
-      padding: 14px 45px;
-    }
-
-    .about-short {
-      .short-details {
         p {
-          font-size: 14px;
+          font-size: 12px;
+          margin-top: 4px; // Add margin to separate the text
+          line-height: 1.2; // Adjust the line height
+          color: $bg-white-1;
+          white-space: nowrap;
+        }
+      }
+    }
+    .about-content {
+      p {
+        color: $bg-dark-1;
+      }
+      h2 {
+        font-size: 36px;
+      }
+      .about-p {
+        padding-top: 10px;
+        width: 95%;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        color: $bg-dark-1;
+        position: relative;
+        margin-left: 25px;
+        .single-point {
+          gap: 10px;
+        }
+        &::before {
+          content: ""; // Create an empty content for the pseudo-element
+          position: absolute;
+          left: -20px; // Position the line 20px to the left of the text (adjust as needed)
+          top: 0;
+          height: 85%; // Match the height of the text
+          width: 4px; // Width of the vertical line
+          background-color: $primary-color; // Change this to your desired color
+          margin-top: 13px;
         }
       }
     }
   }
-
-  @include screen-992 {
-    .about-img {
-      display: none;
-    }
-
-    h6 {
-      font-size: 16px;
-    }
-
-    .about-paragraph {
-      font-size: 14px;
-    }
-  }
-
-  @include screen-768 {
-    h6 {
-      font-size: 16px;
-    }
-
-    .about-paragraph {
-      font-size: 14px;
-    }
-
-    .about-shape-one {
-      position: absolute;
-      top: 40px;
-      right: 10%;
-    }
-  }
-
-  @include portrait-phone {
-    .about-img {
-      display: none;
-    }
-
-    h2 {
-      font-size: 30px;
-    }
-
-    h6 {
-      font-size: 16px;
-    }
-
-    .about-paragraph {
-      font-size: 14px;
-    }
-
-    .template-btn {
-      font-size: 14px;
-    }
-  }
-
-  @include screen-460 {
-    .about-img {
-      display: none;
-    }
-
-    h6 {
-      font-size: 16px;
-    }
-
-    .about-paragraph {
-      font-size: 14px;
-    }
-
-    .about-btn {
-      flex-wrap: wrap;
-    }
-
-    .template-btn {
-      font-size: 14px;
-      width: 100%;
-      text-align: center;
-    }
-
-    @include screen-400 {
+  @include large-screen {
+    .img-wrapper-1 {
+      // margin-top: 30px;
+      right: 37%;
+      z-index: 1;
+      margin-left: 10px;
       .about-img {
-        display: none;
+        width: 500px;
+        height: 460px;
+        transform: translateX(36%);
       }
+      .experince-box {
+        padding: 10px 20px;
+        top: 10%;
+        left: 80%;
+        h2 {
+          color: $bg-white-1;
+          margin-bottom: 0; // Remove bottom margin
+          font-size: 30px;
+        }
 
-      h6 {
+        p {
+          font-size: 12px;
+          margin-top: 4px; // Add margin to separate the text
+          line-height: 1.2; // Adjust the line height
+          color: $bg-white-1;
+          white-space: nowrap;
+        }
+      }
+    }
+    .about-content {
+      p {
+        color: $bg-dark-1;
+      }
+      h2 {
+        font-size: 36px;
+      }
+      .about-p {
+        padding-top: 10px;
+        width: 95%;
         font-size: 16px;
-      }
-
-      .about-paragraph {
-        font-size: 14px;
-      }
-
-      .about-btn {
-        flex-wrap: wrap;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        color: $bg-dark-1;
+        position: relative;
+        margin-left: 25px;
+        p {
+          font-size: 16px;
+        }
+        .single-point {
+          gap: 10px;
+        }
+        &::before {
+          content: ""; // Create an empty content for the pseudo-element
+          position: absolute;
+          left: -20px; // Position the line 20px to the left of the text (adjust as needed)
+          top: 0;
+          height: 85%; // Match the height of the text
+          width: 4px; // Width of the vertical line
+          background-color: $primary-color; // Change this to your desired color
+          margin-top: 13px;
+        }
       }
     }
   }
+  @include screen-1060 {
+    .img-wrapper-1 {
+      // margin-top: 30px;
+      right: 37%;
+      z-index: 1;
+      margin-left: 10px;
+      .about-img {
+        width: 480px;
+        height: 450px;
+        transform: translateX(36%);
+      }
+      .experince-box {
+        padding: 8px 16px;
+        top: 10%;
+        left: 80%;
+        h2 {
+          color: $bg-white-1;
+          margin-bottom: 0; // Remove bottom margin
+          font-size: 30px;
+        }
 
-  @include screen-768 {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    .about-shape-top {
-      display: none;
+        p {
+          font-size: 12px;
+          margin-top: 4px; // Add margin to separate the text
+          line-height: 1.2; // Adjust the line height
+          color: $bg-white-1;
+          white-space: nowrap;
+        }
+      }
     }
+    .about-content {
+      p {
+        color: $bg-dark-1;
+      }
+      h2 {
+        font-size: 36px;
+      }
+      .about-p {
+        padding-top: 10px;
+        width: 95%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        color: $bg-dark-1;
+        position: relative;
+        margin-left: 25px;
+        p {
+          font-size: 16px;
+        }
+        .single-point {
+          gap: 10px;
+        }
+        &::before {
+          content: ""; // Create an empty content for the pseudo-element
+          position: absolute;
+          left: -20px; // Position the line 20px to the left of the text (adjust as needed)
+          top: 0;
+          height: 85%; // Match the height of the text
+          width: 4px; // Width of the vertical line
+          background-color: $primary-color; // Change this to your desired color
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+  @include screen-992 {
+    .img-wrapper-1 {
+      // margin-top: 30px;
+      // position: relative;
+      right: 50;
+      z-index: 1;
+      margin-left: 10px;
+      .about-img {
+        width: 680px;
+        height: 550px;
+        transform: translateX(36%);
+      }
+      .experince-box {
+        padding: 8px 16px;
+        top: 10%;
+        left: 80%;
+        h2 {
+          color: $bg-white-1;
+          margin-bottom: 0; // Remove bottom margin
+          font-size: 30px;
+        }
 
-    .about-shape-bottom {
-      display: none;
+        p {
+          font-size: 12px;
+          margin-top: 4px; // Add margin to separate the text
+          line-height: 1.2; // Adjust the line height
+          color: $bg-white-1;
+          white-space: nowrap;
+        }
+      }
+    }
+    .about-content {
+      p {
+        color: $bg-dark-1;
+      }
+      h2 {
+        font-size: 36px;
+      }
+      .about-p {
+        padding-top: 10px;
+        width: 95%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        color: $bg-dark-1;
+        position: relative;
+        margin-left: 25px;
+        p {
+          font-size: 16px;
+        }
+        .single-point {
+          gap: 10px;
+        }
+        &::before {
+          content: ""; // Create an empty content for the pseudo-element
+          position: absolute;
+          left: -20px; // Position the line 20px to the left of the text (adjust as needed)
+          top: 0;
+          height: 85%; // Match the height of the text
+          width: 4px; // Width of the vertical line
+          background-color: $primary-color; // Change this to your desired color
+          margin-top: 13px;
+        }
+      }
     }
   }
 }
