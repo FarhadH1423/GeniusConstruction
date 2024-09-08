@@ -1125,3 +1125,82 @@
     transform: translate(-55%, -80%) scale(1); /* Bring the popup to full opacity */
   }
 }
+
+.construction-pricing-section {
+  background-color: #fff9f3;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+
+  .single-pricing-box {
+    background-color: $bg-white-1;
+    padding: 40px 20px;
+    .inner-wrapper {
+      .des {
+        font-size: 14px;
+        color: $bg-dark-1 !important;
+      }
+      .price-wrapper {
+        display: flex;
+        justify-content: center; // Centers the price-wrapper horizontally
+        .price {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          background-color: $primary-shade-950;
+          padding: 10px 32px;
+          border-radius: 4px;
+          h4 {
+            color: $bg-white-1;
+            font-size: 32px;
+            margin: 0 !important;
+            display: flex;
+            justify-content: center; // Centers the h4 text horizontally
+            align-items: center; // Centers the h4 text vertically
+            span {
+              font-size: 18px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+        .list-title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .heading-box {
+    position: relative;
+    h4 {
+      position: absolute;
+      color: white;
+      top: 9px;
+      left: 19px;
+    }
+  }
+
+  .pricing-shape {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    @include screen-992 {
+      top: 0px;
+      width: 80px;
+    }
+  }
+
+  .pricing-shape-2 {
+    position: absolute;
+    bottom: 3px;
+    right: 39px;
+  }
+}

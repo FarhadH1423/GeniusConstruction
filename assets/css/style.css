@@ -1902,7 +1902,6 @@ p {
   position: relative;
   display: inline-block;
   z-index: 1;
-  border-radius: 12px;
   overflow: hidden;
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
@@ -2183,6 +2182,26 @@ p {
   .primary-outline:hover {
     color: #ffffff; }
     .primary-outline:hover::before {
+      top: -8px; }
+
+.outline-btn {
+  border: 1px solid #030712;
+  color: #030712; }
+  .outline-btn::before {
+    content: "";
+    position: absolute;
+    left: -90px;
+    top: -135%;
+    width: 190%;
+    height: 135%;
+    background-color: #ff5e15;
+    z-index: -1;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s; }
+  .outline-btn:hover {
+    color: #ffffff; }
+    .outline-btn:hover::before {
       top: -8px; }
 
 .secondary-btn {
@@ -3559,6 +3578,86 @@ p {
     -ms-transform: translate(-55%, -80%) scale(1);
     transform: translate(-55%, -80%) scale(1);
     /* Bring the popup to full opacity */ }
+
+.construction-pricing-section {
+  background-color: #fff9f3;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative; }
+  .construction-pricing-section .single-pricing-box {
+    background-color: #ffffff;
+    padding: 40px 20px; }
+    .construction-pricing-section .single-pricing-box .inner-wrapper .des {
+      font-size: 14px;
+      color: #030712 !important; }
+    .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 80%;
+        background-color: #1a0800;
+        padding: 10px 32px;
+        border-radius: 4px; }
+        .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price h4 {
+          color: #ffffff;
+          font-size: 32px;
+          margin: 0 !important;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price h4 span {
+            font-size: 18px;
+            font-weight: 400; }
+    .construction-pricing-section .single-pricing-box .inner-wrapper ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px; }
+      .construction-pricing-section .single-pricing-box .inner-wrapper ul .list-title {
+        font-size: 16px; }
+  .construction-pricing-section .heading-box {
+    position: relative; }
+    .construction-pricing-section .heading-box h4 {
+      position: absolute;
+      color: white;
+      top: 9px;
+      left: 19px; }
+  .construction-pricing-section .pricing-shape {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+    @media (max-width: 991.98px) {
+      .construction-pricing-section .pricing-shape {
+        top: 0px;
+        width: 80px; } }
+  .construction-pricing-section .pricing-shape-2 {
+    position: absolute;
+    bottom: 3px;
+    right: 39px; }
 
 .faq-section {
   background-color: #ffffff;
