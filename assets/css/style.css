@@ -2199,10 +2199,6 @@ p {
     -webkit-transition: all 0.8s;
     -o-transition: all 0.8s;
     transition: all 0.8s; }
-  .outline-btn:hover {
-    color: #ffffff; }
-    .outline-btn:hover::before {
-      top: -8px; }
 
 .secondary-btn {
   color: #ffffff;
@@ -3586,35 +3582,25 @@ p {
   position: relative; }
   .construction-pricing-section .single-pricing-box {
     background-color: #ffffff;
-    padding: 40px 20px; }
-    .construction-pricing-section .single-pricing-box .inner-wrapper .des {
-      font-size: 14px;
-      color: #030712 !important; }
-    .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price {
+    padding: 40px 24px;
+    -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+    transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease; }
+    .construction-pricing-section .single-pricing-box .inner-wrapper {
+      margin-top: 10px; }
+      .construction-pricing-section .single-pricing-box .inner-wrapper .des {
+        font-size: 14px;
+        color: #030712 !important; }
+      .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        width: 80%;
-        background-color: #1a0800;
-        padding: 10px 32px;
-        border-radius: 4px; }
-        .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price h4 {
-          color: #ffffff;
-          font-size: 32px;
-          margin: 0 !important;
+        justify-content: center; }
+        .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -3623,41 +3609,199 @@ p {
           justify-content: center;
           -webkit-box-align: center;
           -ms-flex-align: center;
-          align-items: center; }
-          .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price h4 span {
-            font-size: 18px;
-            font-weight: 400; }
-    .construction-pricing-section .single-pricing-box .inner-wrapper ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 24px; }
-      .construction-pricing-section .single-pricing-box .inner-wrapper ul .list-title {
-        font-size: 16px; }
-  .construction-pricing-section .heading-box {
-    position: relative; }
-    .construction-pricing-section .heading-box h4 {
+          align-items: center;
+          width: 80%;
+          background-color: #1a0800;
+          padding: 10px 32px;
+          border-radius: 4px; }
+          .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price h4 {
+            color: #ffffff;
+            font-size: 32px;
+            margin: 0 !important;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .construction-pricing-section .single-pricing-box .inner-wrapper .price-wrapper .price h4 span {
+              font-size: 18px;
+              font-weight: 400; }
+      .construction-pricing-section .single-pricing-box .inner-wrapper ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px; }
+        .construction-pricing-section .single-pricing-box .inner-wrapper ul .list-title {
+          font-size: 16px; }
+    .construction-pricing-section .single-pricing-box .heading-box {
+      position: relative; }
+      .construction-pricing-section .single-pricing-box .heading-box h4 {
+        position: absolute;
+        color: white;
+        top: 9px;
+        left: 19px; }
+    .construction-pricing-section .single-pricing-box .pricing-shape {
       position: absolute;
-      color: white;
-      top: 9px;
-      left: 19px; }
-  .construction-pricing-section .pricing-shape {
+      top: 40px;
+      left: 40px; }
+      @media (max-width: 991.98px) {
+        .construction-pricing-section .single-pricing-box .pricing-shape {
+          top: 0px;
+          width: 80px; } }
+    .construction-pricing-section .single-pricing-box .pricing-shape-2 {
+      position: absolute;
+      bottom: 3px;
+      right: 39px; }
+    .construction-pricing-section .single-pricing-box:hover {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+      -webkit-box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+      background-color: #ff5e15; }
+      .construction-pricing-section .single-pricing-box:hover .inner-wrapper h4 {
+        color: #ffffff; }
+      .construction-pricing-section .single-pricing-box:hover .inner-wrapper .des {
+        color: #ffffff !important; }
+      .construction-pricing-section .single-pricing-box:hover .inner-wrapper ul h6 {
+        color: #ffffff; }
+      .construction-pricing-section .single-pricing-box:hover .inner-wrapper ul svg path {
+        fill: #ffffff; }
+      .construction-pricing-section .single-pricing-box:hover .inner-wrapper ul .list-title {
+        color: #ffffff; }
+      .construction-pricing-section .single-pricing-box:hover .inner-wrapper .price-wrapper .price {
+        background-color: #ffffff; }
+        .construction-pricing-section .single-pricing-box:hover .inner-wrapper .price-wrapper .price h4 {
+          color: #1a0800; }
+      .construction-pricing-section .single-pricing-box:hover .inner-wrapper .btn-hvr {
+        background-color: #ffffff !important;
+        color: #030712;
+        border: none; }
+      .construction-pricing-section .single-pricing-box:hover .heading-box h4 {
+        color: #ff5e15; }
+      .construction-pricing-section .single-pricing-box:hover .heading-box svg path {
+        fill: #ffffff; }
+  @media (max-width: 1199.98px) {
+    .construction-pricing-section {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media (max-width: 991.98px) {
+    .construction-pricing-section {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  .team-section .team-row .head-p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #030712;
+    max-width: 80%; }
+  .team-section .service-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* Center horizontally */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* Center vertically */
+    margin-bottom: 40px; }
+  .team-section .service-wrapper img {
+    width: 100%;
+    display: block;
+    height: 358px; }
+  .team-section .title-wrapper {
+    width: 85%;
     position: absolute;
-    top: 40px;
-    left: 40px; }
-    @media (max-width: 991.98px) {
-      .construction-pricing-section .pricing-shape {
-        top: 0px;
-        width: 80px; } }
-  .construction-pricing-section .pricing-shape-2 {
+    bottom: -12px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* Center the wrapper vertically and horizontally */
+    padding: 16px;
+    background-color: #ffffff;
+    /* Semi-transparent background */
+    color: #030712;
+    /* Text color */
+    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+    transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+    -o-transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 8px; }
+    .team-section .title-wrapper h5 {
+      margin-bottom: 0 !important;
+      text-wrap: nowrap; }
+    .team-section .title-wrapper p {
+      font-size: 14px;
+      color: #030712 !important;
+      text-wrap: nowrap;
+      font-weight: 500;
+      margin-bottom: 0 !important; }
+  .team-section .popup-content {
+    width: 90%;
+    padding: 16px;
+    background-color: #ff5e15;
+    /* Slightly transparent white background */
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional shadow effect */
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+    transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+    -o-transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+    text-align: center;
     position: absolute;
-    bottom: 3px;
-    right: 39px; }
+    /* Position relative to .service-wrapper */
+    text-align: left; }
+    .team-section .popup-content p {
+      margin-bottom: 16px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      color: #ffffff !important; }
+  .team-section .popup-content h5 {
+    text-wrap: wrap;
+    color: #ffffff; }
+  .team-section .service-wrapper:hover .title-wrapper {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    /* Move title-wrapper off the screen on hover */ }
+  .team-section .service-wrapper:hover .popup-content {
+    opacity: 1;
+    -webkit-transform: translate(-57%, -140%) scale(1);
+    -ms-transform: translate(-57%, -140%) scale(1);
+    transform: translate(-57%, -140%) scale(1);
+    /* Bring the popup to full opacity */ }
 
 .faq-section {
   background-color: #ffffff;

@@ -1134,8 +1134,9 @@
 
   .single-pricing-box {
     background-color: $bg-white-1;
-    padding: 40px 20px;
+    padding: 40px 24px;
     .inner-wrapper {
+      margin-top: 10px;
       .des {
         font-size: 14px;
         color: $bg-dark-1 !important;
@@ -1175,32 +1176,194 @@
         }
       }
     }
-  }
 
-  .heading-box {
-    position: relative;
-    h4 {
+    .heading-box {
+      position: relative;
+      h4 {
+        position: absolute;
+        color: white;
+        top: 9px;
+        left: 19px;
+      }
+    }
+
+    .pricing-shape {
       position: absolute;
-      color: white;
-      top: 9px;
-      left: 19px;
+      top: 40px;
+      left: 40px;
+
+      @include screen-992 {
+        top: 0px;
+        width: 80px;
+      }
+    }
+
+    .pricing-shape-2 {
+      position: absolute;
+      bottom: 3px;
+      right: 39px;
+    }
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth transition for transform and box-shadow
+
+    &:hover {
+      transform: translateY(-10px); // Moves the box up
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15); // Adds a shadow effect
+      background-color: $primary-color; // Changes background on hover
+
+      .inner-wrapper {
+        h4 {
+          color: $bg-white-1; // Changes price text color on hover
+        }
+        .des {
+          color: $bg-white-1 !important; // Changes description color on hover
+        }
+        ul {
+          h6 {
+            color: $bg-white-1;
+          }
+          svg {
+            path {
+              fill: $bg-white-1;
+            }
+          }
+          .list-title {
+            color: $bg-white-1;
+          }
+        }
+        .price-wrapper {
+          .price {
+            background-color: $bg-white-1; // Changes price background color on hover
+
+            h4 {
+              color: $primary-shade-950; // Changes price text color on hover
+            }
+          }
+        }
+        .btn-hvr {
+          background-color: $bg-white-1 !important;
+          color: $bg-dark-1;
+          border: none;
+        }
+      }
+
+      .heading-box {
+        h4 {
+          color: $primary-color;
+        }
+        svg {
+          path {
+            fill: $bg-white-1;
+          }
+        }
+      }
+    }
+  }
+  @include large-screen {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include screen-992 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .team-row {
+    .head-p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $bg-dark-1;
+      max-width: 80%;
     }
   }
 
-  .pricing-shape {
-    position: absolute;
-    top: 40px;
-    left: 40px;
+  .service-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 40px;
+  }
 
-    @include screen-992 {
-      top: 0px;
-      width: 80px;
+  .service-wrapper img {
+    width: 100%;
+    display: block;
+    // width: 424px;
+    height: 358px;
+  }
+
+  .title-wrapper {
+    width: 85%;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Center the wrapper vertically and horizontally */
+    padding: 16px;
+    background-color: $bg-white-1; /* Semi-transparent background */
+    color: $bg-dark-1; /* Text color */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    // text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+
+    h5 {
+      margin-bottom: 0 !important;
+      text-wrap: nowrap;
+      // width: 80%;
+    }
+    p {
+      font-size: 14px;
+      color: $bg-dark-1 !important;
+      text-wrap: nowrap;
+      font-weight: 500;
+      margin-bottom: 0 !important;
     }
   }
 
-  .pricing-shape-2 {
-    position: absolute;
-    bottom: 3px;
-    right: 39px;
+  .popup-content {
+    width: 90%;
+    padding: 16px;
+    background-color: $primary-color; /* Slightly transparent white background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    position: absolute; /* Position relative to .service-wrapper */
+    text-align: left;
+
+    p {
+      // margin-top: 8px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      color: $bg-white-1 !important;
+    }
+  }
+
+  .popup-content h5 {
+    text-wrap: wrap;
+    color: $bg-white-1;
+  }
+
+  .service-wrapper:hover .title-wrapper {
+    transform: translateY(
+      100%
+    ); /* Move title-wrapper off the screen on hover */
+  }
+
+  .service-wrapper:hover .popup-content {
+    opacity: 1;
+    transform: translate(-57%, -140%) scale(1); /* Bring the popup to full opacity */
   }
 }

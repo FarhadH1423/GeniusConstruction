@@ -385,14 +385,6 @@
 
     transition: $transition-base;
   }
-
-  &:hover {
-    color: $text-color;
-
-    &::before {
-      top: -8px;
-    }
-  }
 }
 
 .secondary-btn {
