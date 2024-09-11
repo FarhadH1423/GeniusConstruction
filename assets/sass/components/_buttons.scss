@@ -10,24 +10,27 @@
   // border-radius: 12px;
   overflow: hidden;
   transition: $transition-base;
+  @include screen-992 {
+    padding: 14px 30px;
+    font-size: 16px;
+  }
+
+  @include screen-820 {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
 
   @include screen-768 {
-    padding: 14px 51px;
-    font-size: 18px;
+    padding: 14px 28px;
+    font-size: 16px;
   }
 
   @include portrait-phone {
-    padding: 10px 30px;
-    font-size: 14px;
-  }
-
-  @include screen-460 {
-    padding: 14px 51px;
     font-size: 14px;
   }
 
   @include screen-400 {
-    padding: 14px 51px;
+    padding: 14px 25px;
     font-size: 14px;
   }
 }

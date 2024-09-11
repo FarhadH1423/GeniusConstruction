@@ -1,0 +1,67 @@
+.ma-input,
+.ma-textarea {
+  border: 1px solid var(--input-border-color);
+  background: var(--white-color);
+  padding: 17px 24px;
+  color: var(--text-color-950);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition); }
+  .ma-input::-webkit-input-placeholder,
+  .ma-textarea::-webkit-input-placeholder {
+    color: var(--text-color-950); }
+  .ma-input:-ms-input-placeholder,
+  .ma-textarea:-ms-input-placeholder {
+    color: var(--text-color-950); }
+  .ma-input::-ms-input-placeholder,
+  .ma-textarea::-ms-input-placeholder {
+    color: var(--text-color-950); }
+  .ma-input::placeholder,
+  .ma-textarea::placeholder {
+    color: var(--text-color-950); }
+  .ma-input:focus,
+  .ma-textarea:focus {
+    border: 1px solid var(--primary-color-500); }
+
+.pp-input-label {
+  margin-bottom: 8px; }
+
+.pp-form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 56px;
+  padding: 16px 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--text-color-400);
+  background: var(--white-color);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: var(--text-color-700);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition); }
+  .pp-form-input::-webkit-input-placeholder {
+    color: var(--text-color-700); }
+  .pp-form-input:-ms-input-placeholder {
+    color: var(--text-color-700); }
+  .pp-form-input::-ms-input-placeholder {
+    color: var(--text-color-700); }
+  .pp-form-input::placeholder {
+    color: var(--text-color-700); }
+  .pp-form-input:focus {
+    border: 1px solid var(--text-color-700); }

@@ -8,6 +8,105 @@ Version: 1.1.0
 */
 /************************************** base css **************************************/
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --template-font: "Jost", sans-serif;
+  --primary-color-950: #00071f;
+  --primary-color-900: #000e3d;
+  --primary-color-800: #001b75;
+  --primary-color-700: #002ab3;
+  --primary-color-600: #0037eb;
+  --primary-color-500: #295bff;
+  --primary-color-400: #527aff;
+  --primary-color-300: #809dff;
+  --primary-color-200: #a8bdff;
+  --primary-color-100: #d6e0ff;
+  --primary-color-50: #ebefff;
+  --secondary-color-950: #1f0800;
+  --secondary-color-900: #3d1000;
+  --secondary-color-800: #751f00;
+  --secondary-color-700: #b33000;
+  --secondary-color-600: #eb3e00;
+  --secondary-color-500: #ff6229;
+  --secondary-color-400: #ff8052;
+  --secondary-color-300: #ffa180;
+  --secondary-color-200: #ffbfa8;
+  --secondary-color-100: #ffe1d6;
+  --secondary-color-50: #fff0eb;
+  --text-color-950: #00071f;
+  --text-color-900: #1a2035;
+  --text-color-800: #33394c;
+  --text-color-700: #404557;
+  --text-color-600: #666a79;
+  --text-color-500: #8c8f9a;
+  --text-color-400: #adb0b7;
+  --text-color-300: #bfc1c7;
+  --text-color-200: #d4d5d9;
+  --text-color-100: #e6e6e9;
+  --text-color-50: #f7f8f8;
+  --tertiary-color-950: #041007;
+  --tertiary-color-900: #08210e;
+  --tertiary-color-800: #10421b;
+  --tertiary-color-700: #186329;
+  --tertiary-color-600: #208436;
+  --tertiary-color-500: #28a745;
+  --tertiary-color-400: #3ad05c;
+  --tertiary-color-300: #6bdc85;
+  --tertiary-color-200: #9ce7ad;
+  --tertiary-color-100: #cef3d6;
+  --tertiary-color-50: #e6f9eb;
+  --positive-color-950: #031109;
+  --positive-color-900: #082615;
+  --positive-color-800: #104c2a;
+  --positive-color-700: #17723f;
+  --positive-color-600: #1f9854;
+  --positive-color-500: #27be69;
+  --positive-color-400: #45d985;
+  --positive-color-300: #73e2a4;
+  --positive-color-200: #a2ecc2;
+  --positive-color-100: #d0f5e1;
+  --positive-color-50: #e6faee;
+  --negative-color-950: #1d0206;
+  --negative-color-900: #39040b;
+  --negative-color-800: #730817;
+  --negative-color-700: #ac0c22;
+  --negative-color-600: #e5102e;
+  --negative-color-500: #f2415a;
+  --negative-color-400: #f5667a;
+  --negative-color-300: #f78c9c;
+  --negative-color-200: #fab3bd;
+  --negative-color-100: #fcd9de;
+  --negative-color-50: #feecee;
+  --warning-color-950: #1a1300;
+  --warning-color-900: #382900;
+  --warning-color-800: #6b4f00;
+  --warning-color-700: #a37800;
+  --warning-color-600: #d69d00;
+  --warning-color-500: #ffbf0f;
+  --warning-color-400: #ffcb3d;
+  --warning-color-300: #ffd970;
+  --warning-color-200: #ffe59e;
+  --warning-color-100: #fff3d1;
+  --warning-color-50: #fff8e5;
+  --info-color-950: #00071f;
+  --info-color-900: #000e3d;
+  --info-color-800: #001b75;
+  --info-color-700: #002ab3;
+  --info-color-600: #0037eb;
+  --info-color-500: #295bff;
+  --info-color-400: #527aff;
+  --info-color-300: #809dff;
+  --info-color-200: #a8bdff;
+  --info-color-100: #d6e0ff;
+  --info-color-50: #ebefff;
+  --white-color: #ffffff;
+  --black-color: #030712;
+  --transition: all 0.3s ease-in;
+  --box-shadow-1: 0px 8px 36px 0px rgba(0, 0, 0, 0.1);
+  --box-shadow-sm: 0px 0px 10px 2px rgba(0, 0, 0, 0.08);
+  --border-color-1: #e8e8e8;
+  --input-border-color: #ced2d9;
+  --ratting-star-color: #fac03c; }
+
 body {
   margin: 0;
   font-family: "Jost", sans-serif !important;
@@ -1906,21 +2005,24 @@ p {
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
   transition: all 0.8s; }
+  @media (max-width: 991.98px) {
+    .template-btn {
+      padding: 14px 30px;
+      font-size: 16px; } }
+  @media (max-width: 819.98px) {
+    .template-btn {
+      padding: 14px 24px;
+      font-size: 16px; } }
   @media (max-width: 767.98px) {
     .template-btn {
-      padding: 14px 51px;
-      font-size: 18px; } }
+      padding: 14px 28px;
+      font-size: 16px; } }
   @media (max-width: 575.98px) {
     .template-btn {
-      padding: 10px 30px;
-      font-size: 14px; } }
-  @media (max-width: 460px) {
-    .template-btn {
-      padding: 14px 51px;
       font-size: 14px; } }
   @media (max-width: 400px) {
     .template-btn {
-      padding: 14px 51px;
+      padding: 14px 25px;
       font-size: 14px; } }
 
 .header-template-btn {
@@ -2806,6 +2908,74 @@ p {
         font-size: 24px; }
       .breadcrumb-section .breadcrumb-content h4 {
         font-size: 16px; } }
+
+.ma-input,
+.ma-textarea {
+  border: 1px solid #766b66;
+  background: transparent;
+  padding: 17px 24px;
+  color: #f8f8f7;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s; }
+  .ma-input::-webkit-input-placeholder,
+  .ma-textarea::-webkit-input-placeholder {
+    color: #f8f8f7; }
+  .ma-input:-ms-input-placeholder,
+  .ma-textarea:-ms-input-placeholder {
+    color: #f8f8f7; }
+  .ma-input::-ms-input-placeholder,
+  .ma-textarea::-ms-input-placeholder {
+    color: #f8f8f7; }
+  .ma-input::placeholder,
+  .ma-textarea::placeholder {
+    color: #f8f8f7; }
+  .ma-input:focus,
+  .ma-textarea:focus {
+    border: 1px solid #ff5e15; }
+
+.pp-input-label {
+  margin-bottom: 8px; }
+
+.pp-form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 56px;
+  padding: 16px 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #666666;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #999999;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s; }
+  .pp-form-input::-webkit-input-placeholder {
+    color: #999999; }
+  .pp-form-input:-ms-input-placeholder {
+    color: #999999; }
+  .pp-form-input::-ms-input-placeholder {
+    color: #999999; }
+  .pp-form-input::placeholder {
+    color: #999999; }
+  .pp-form-input:focus {
+    border: 1px solid #ff5e15; }
 
 /****************************** page styles ******************************/
 /************************ index - 1  ****************/
@@ -3702,6 +3872,14 @@ p {
 .team-section {
   padding-top: 120px;
   padding-bottom: 120px; }
+  @media (max-width: 1199.98px) {
+    .team-section {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media (max-width: 991.98px) {
+    .team-section {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   .team-section .team-row .head-p {
     font-size: 16px;
     font-weight: 400;
@@ -3802,6 +3980,32 @@ p {
     -ms-transform: translate(-57%, -140%) scale(1);
     transform: translate(-57%, -140%) scale(1);
     /* Bring the popup to full opacity */ }
+
+.ma-contact-section {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  background-color: #030712; }
+  .ma-contact-section h2 {
+    color: #ffffff; }
+  .ma-contact-section .contact-shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 351px;
+    height: 100%;
+    z-index: 0; }
+  .ma-contact-section .contact-left-img {
+    position: absolute;
+    right: 100px;
+    width: 651px;
+    height: 578px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    z-index: 99; }
 
 .faq-section {
   background-color: #ffffff;
