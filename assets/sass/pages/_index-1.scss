@@ -1385,9 +1385,22 @@
   padding-bottom: 120px;
   position: relative;
   background-color: $bg-dark-1;
+  @include large-screen {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include screen-992 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   h2 {
     color: $bg-white-1;
+  }
+
+  .des {
+    font-size: 16px;
+    margin-top: 24px;
   }
 
   .contact-shape {
@@ -1397,45 +1410,190 @@
     width: 351px;
     height: 100%;
     z-index: 0;
+    @include screen-992 {
+      display: none;
+    }
   }
 
   .contact-left-img {
     position: absolute;
     right: 100px;
-    width: 651px;
-    height: 578px;
+    width: 797px;
+    height: 681px;
     flex-shrink: 0;
-    z-index: 99;
+    z-index: 1;
 
-    // @include screen-1700 {
-    //   width: 726px;
-    //   height: 680px;
-    //   right: 100px;
-    // }
-    // @include screen-1600 {
-    //   width: 680px;
-    //   height: 650px;
-    //   right: 60px;
-    // }
-    // @include screen-1500 {
-    //   width: 650px;
-    //   height: 620px;
-    //   right: 30px;
-    // }
+    @include screen-1860 {
+      right: 50px;
+      width: 730px;
+      height: 620px;
+    }
 
-    // @include screen-1400 {
-    //   width: 100%;
-    //   height: 100%;
-    //   right: 0;
-    //   object-fit: contain;
-    // }
-
-    // @include screen-992 {
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   width: calc(100% - 3px);
-    //   height: auto;
-    //   margin-bottom: 60px;
-    // }
+    @include screen-1600 {
+      right: 20px;
+      width: 700px;
+      height: 600px;
+    }
+    @include screen-1460 {
+      margin-top: 40px;
+      right: 10px;
+      width: 650px;
+      height: 550px;
+    }
+    @include screen-1400 {
+      margin-top: 40px;
+      right: 10px;
+      width: 630px;
+      height: 540px;
+    }
+    @include screen-1290 {
+      margin-top: 50px;
+      right: 10px;
+      width: 590px;
+      height: 520px;
+    }
+    @include large-screen {
+      margin-top: 70px;
+      right: 10px;
+      width: 550px;
+      height: 500px;
+    }
+    @include screen-1120 {
+      margin-top: 80px;
+      right: 10px;
+      width: 520px;
+      height: 480px;
+    }
+    @include screen-1060 {
+      margin-top: 100px;
+      right: 10px;
+      width: 480px;
+      height: 450px;
+    }
+    @include screen-992 {
+      position: relative;
+      width: 80%;
+      height: 600px;
+    }
+    @include screen-768 {
+      right: 0px;
+      margin-top: 50px;
+      width: 90%;
+      height: 500px;
+    }
+    @include portrait-phone {
+      margin-top: 50px;
+      width: 90%;
+      height: 450px;
+    }
+    @include screen-400 {
+      margin-top: 50px;
+      width: 95%;
+      height: 350px;
+    }
   }
+}
+
+.news-section {
+  background-color: $news-bg;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @include large-screen {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include screen-992 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .title-box-1 {
+    .common-sub {
+      color: $primary-color;
+      font-weight: 500;
+      font-size: 24px;
+    }
+    p {
+      color: $bg-dark-1;
+      max-width: 872px;
+      margin: 0 auto; /* This centers the paragraph */
+      @include screen-768 {
+        font-size: 14px;
+      }
+    }
+  }
+  .news-wrapper {
+    margin-top: 60px;
+    background-color: $bg-white-1;
+    .news-img {
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .news-date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $primary-color;
+        padding: 12px 16px;
+
+        span {
+          color: $bg-white-1;
+          margin-left: 10px;
+        }
+      }
+    }
+    .news-content {
+      padding: 16px 16px 24px 16px;
+      h5 {
+        font-weight: 500;
+      }
+      a {
+        color: $bg-dark-1;
+        font-weight: 500;
+      }
+    }
+
+    &:hover {
+      .news-content {
+        h5 {
+          color: $primary-color;
+        }
+        a {
+          color: $primary-color;
+        }
+        svg {
+          path {
+            fill: $primary-color;
+          }
+        }
+      }
+    }
+    @include large-screen {
+      margin-top: 40px;
+    }
+    @include screen-768 {
+      margin-top: 20px;
+      .news-content {
+        h5 {
+          font-size: 20px;
+        }
+        a {
+          font-size: 14px;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.testimonials-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
