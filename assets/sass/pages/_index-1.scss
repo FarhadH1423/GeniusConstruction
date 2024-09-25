@@ -4,7 +4,7 @@
 .common-p {
   padding-top: 10px;
   width: 95%;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
@@ -1028,6 +1028,16 @@
 .service-section {
   margin-top: 120px;
   margin-bottom: 120px;
+  .service-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-lg-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; // Aligns content at the bottom of the column
+    }
+  }
   .gallery-row {
     margin-top: 60px;
   }
@@ -1596,4 +1606,106 @@
 .testimonials-section {
   padding-top: 120px;
   padding-bottom: 120px;
+
+  .service-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-lg-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; // Aligns content at the bottom of the column
+    }
+  }
+
+  .testimonial-wrapper {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    // max-width: 1200px;
+    // margin: 0 auto;
+    .testimonial-review-section {
+      position: absolute;
+      width: 50%;
+      background-color: #2e1a0f;
+      padding: 40px;
+      color: #fff;
+      right: 0px;
+      top: 25%;
+
+      .testimonial-card {
+        display: none;
+        &.active {
+          display: block;
+        }
+        .client-image {
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          margin-bottom: 10px;
+          border: 1px solid $bg-white-1;
+        }
+        h4 {
+          font-size: 24px;
+          margin-bottom: 5px;
+        }
+        p {
+          margin: 0;
+        }
+        .testimonial-stars {
+          color: gold;
+          margin-top: 10px;
+        }
+      }
+
+      .testimonial-navigation {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        button {
+          background-color: #ff6b00;
+          color: #fff;
+          border: none;
+          padding: 10px 15px;
+          margin-left: 10px;
+          cursor: pointer;
+          &:hover {
+            background-color: #e55c00;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial-image-section {
+    position: relative;
+    width: 50%;
+    width: 943px;
+    height: 700px;
+    margin-left: -180px; // Adjust this value based on how far you want the image outside the container
+    .team-image {
+      width: 100%;
+      object-fit: cover;
+    }
+    .happy-clients {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background-color: #ff6b00;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      .client-icon {
+        margin-right: 10px;
+      }
+      .client-text h2 {
+        font-size: 32px;
+        margin: 0;
+      }
+      .client-text p {
+        margin: 0;
+      }
+    }
+  }
 }
