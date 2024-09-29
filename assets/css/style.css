@@ -4210,12 +4210,12 @@ p {
     position: relative; }
     .testimonials-section .testimonial-wrapper .testimonial-review-section {
       position: absolute;
-      width: 50%;
-      background-color: #2e1a0f;
-      padding: 40px;
+      width: 58%;
+      background-color: #1a0800;
+      padding: 32px 60px;
       color: #fff;
       right: 0px;
-      top: 25%; }
+      top: 20%; }
       .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-card {
         display: none; }
         .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-card.active {
@@ -4226,30 +4226,35 @@ p {
           height: 80px;
           margin-bottom: 10px;
           border: 1px solid #ffffff; }
-        .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-card h4 {
+        .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-card h5 {
           font-size: 24px;
-          margin-bottom: 5px; }
+          margin-bottom: 5px;
+          font-weight: 600; }
         .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-card p {
+          font-size: 14px;
           margin: 0; }
+        .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-card .testimonial-text {
+          font-size: 16px;
+          padding-top: 10px;
+          padding-bottom: 30px; }
         .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-card .testimonial-stars {
           color: gold;
-          margin-top: 10px; }
+          margin-top: 10px;
+          font-size: 16px; }
       .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-navigation {
-        position: absolute;
-        bottom: 20px;
-        right: 20px; }
+        margin-top: 20px;
+        text-align: end; }
         .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-navigation button {
-          background-color: #ff6b00;
           color: #fff;
-          border: none;
-          padding: 10px 15px;
+          border-radius: 2px;
+          border: 1px solid #ff5e15;
+          padding: 8px;
           margin-left: 10px;
           cursor: pointer; }
           .testimonials-section .testimonial-wrapper .testimonial-review-section .testimonial-navigation button:hover {
             background-color: #e55c00; }
   .testimonials-section .testimonial-image-section {
     position: relative;
-    width: 50%;
     width: 943px;
     height: 700px;
     margin-left: -180px; }
@@ -4261,9 +4266,9 @@ p {
       position: absolute;
       bottom: 0px;
       left: 0px;
-      background-color: #ff6b00;
+      background-color: #ff5e15;
       color: #fff;
-      padding: 10px 20px;
+      padding: 20px 30px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -4271,12 +4276,26 @@ p {
       -ms-flex-align: center;
       align-items: center; }
       .testimonials-section .testimonial-image-section .happy-clients .client-icon {
-        margin-right: 10px; }
+        margin-right: 10px;
+        background-color: #ffffff;
+        padding: 20px; }
       .testimonials-section .testimonial-image-section .happy-clients .client-text h2 {
         font-size: 32px;
-        margin: 0; }
+        margin-right: 60px; }
       .testimonials-section .testimonial-image-section .happy-clients .client-text p {
         margin: 0; }
+  @media (max-width: 1700px) {
+    .testimonials-section .testimonial-wrapper .testimonial-review-section {
+      width: 60%;
+      padding: 32px 40px; }
+    .testimonials-section .testimonial-image-section {
+      width: 50%;
+      width: 943px;
+      height: 700px;
+      margin-left: -100px; }
+      .testimonials-section .testimonial-image-section .happy-clients {
+        bottom: 0px;
+        left: 0px; } }
 
 .faq-section {
   background-color: #ffffff;
