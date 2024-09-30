@@ -1,0 +1,82 @@
+.testi-card {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 613px;
+  padding: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: var(--white-color);
+  -webkit-box-shadow: var(--box-shadow-sm);
+  box-shadow: var(--box-shadow-sm); }
+  .testi-card .avater-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 16px; }
+    .testi-card .avater-wrapper .avater {
+      width: 80px;
+      height: 80px;
+      border-radius: 100px;
+      border: 1px solid var(--white-color); }
+    .testi-card .avater-wrapper .name-designation-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      gap: 8px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+      flex: 1 0 0; }
+  .testi-card .des,
+  .testi-card .designation {
+    color: var(--text-color-950); }
+  .testi-card.testi-card-v2 {
+    padding: 24px 60px 32px 60px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 48px; }
+    .testi-card.testi-card-v2 .avater-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      position: relative;
+      top: -84px; }
+      .testi-card.testi-card-v2 .avater-wrapper .avater {
+        width: 120px;
+        height: 120px; }
+    .testi-card.testi-card-v2 .des {
+      margin-top: -84px; }
+
+.stars-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px; }
+  .stars-wrapper .star {
+    font-size: 22px;
+    color: var(--ratting-star-color); }

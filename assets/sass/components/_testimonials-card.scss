@@ -1,0 +1,102 @@
+.testi-card {
+  display: flex !important;
+  width: 613px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: $primary-shade-950;
+  //   box-shadow: var(--box-shadow-sm);
+
+  .avater-wrapper {
+    display: flex;
+
+    .client-image {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+      border: 1px solid $bg-white-1;
+    }
+
+    .name-designation-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      flex: 1 0 0;
+    }
+
+    // @include screen-576 {
+    //   flex-direction: column;
+    //   align-items: flex-start;
+    // }
+  }
+
+  .des,
+  .designation {
+    color: $bg-dark-1;
+  }
+
+  // testimonial card V2 (for home 2)
+  &.testi-card-v2 {
+    padding: 24px 60px 32px 60px;
+
+    // @include screen-992 {
+    //   // padding: 12px 30px 16px 30px;
+    //   padding: 12px 24px 24px 24px;
+    //   margin-top: 60px;
+    // }
+
+    .avater-wrapper {
+      display: flex;
+      gap: 16px;
+
+      //   @include screen-576 {
+      //     align-items: center;
+      //     // top: -60px;
+      //     top: -46px;
+      //   }
+
+      .client-image {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+        border: 1px solid $bg-white-1;
+      }
+      .client-details {
+        h5 {
+          color: $bg-white-1;
+          font-weight: 600;
+        }
+        p {
+          font-size: 14px;
+          color: $bg-white-1;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .des {
+      font-size: 16px;
+      color: $bg-white-1;
+      font-weight: 400;
+    }
+  }
+}
+
+.stars-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .star {
+    font-size: 22px;
+    color: yellow;
+
+    // @include screen-992 {
+    //   font-size: 16px;
+    // }
+  }
+}
