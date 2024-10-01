@@ -40,7 +40,16 @@
 
   // testimonial card V2 (for home 2)
   &.testi-card-v2 {
-    padding: 24px 60px 32px 60px;
+    padding: 32px 60px;
+    @include screen-992 {
+      padding: 20px 40px;
+    }
+    @include screen-768 {
+      padding: 20px 30px;
+    }
+    @include portrait-phone {
+      padding: 20px 20px;
+    }
 
     // @include screen-992 {
     //   // padding: 12px 30px 16px 30px;
@@ -67,7 +76,7 @@
       }
       .client-details {
         h5 {
-          color: $bg-white-1;
+          color: $bg-white-1 !important;
           font-weight: 600;
         }
         p {
@@ -79,9 +88,16 @@
     }
 
     .des {
+      margin-top: 16px;
+      margin-bottom: 40px;
       font-size: 16px;
       color: $bg-white-1;
       font-weight: 400;
+      @include screen-768 {
+        margin-bottom: 20px;
+        font-size: 14px;
+        margin-top: 0px;
+      }
     }
   }
 }
@@ -90,13 +106,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-bottom: 70px;
 
   .star {
     font-size: 22px;
     color: yellow;
 
-    // @include screen-992 {
-    //   font-size: 16px;
-    // }
+    @include screen-992 {
+      font-size: 16px;
+    }
   }
 }

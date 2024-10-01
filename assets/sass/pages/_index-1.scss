@@ -1700,7 +1700,7 @@
       left: 0px;
       background-color: $primary-color;
       color: #fff;
-      padding: 20px 30px;
+      padding: 20px 30px 20px 30px;
       display: flex;
       align-items: center;
       .client-icon {
@@ -1741,14 +1741,15 @@
 .ma-testi-section {
   overflow: hidden;
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  // @include screen-1200 {
-  //   padding-bottom: 0px !important;
-  // }
 
   .testimonial-header {
     margin-bottom: 60px;
+    @include large-screen {
+      margin-bottom: 40px;
+    }
+    @include screen-992 {
+      margin-bottom: 30px;
+    }
   }
 
   .testi-primary-shap {
@@ -1804,7 +1805,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 2px;
-    background: var(--primary-color-50);
+    // background: var(--primary-color-50);
     transition: var(--transition);
 
     // @include screen-1400 {
@@ -1865,6 +1866,16 @@
 
 .ma-testi-section-home-2 {
   overflow: visible;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @include large-screen {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+  @include screen-992 {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
   .testimonial-img-wrapper {
     position: relative;
     .testi-img {
@@ -1919,8 +1930,10 @@
     }
 
     .happy-clients {
+      display: flex;
+      gap: 24px;
       position: absolute;
-      padding: 20px 30px;
+      padding: 20px 100px 20px 30px;
       background-color: $primary-color;
       // justify-content: center;
       bottom: 0px;
@@ -1929,6 +1942,34 @@
         // margin-left: 10px;
         padding: 20px;
         background-color: $bg-white-1;
+        @include screen-1290 {
+          padding: 12px;
+        }
+      }
+      .client-text {
+        h2 {
+          color: $bg-white-1;
+        }
+        p {
+          font-size: 30px;
+          line-height: 20px;
+        }
+        @include screen-1460 {
+          h2 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 24px;
+          }
+        }
+        @include screen-1290 {
+          h2 {
+            font-size: 36px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
       }
       @include screen-1800 {
         left: -130px;
@@ -1945,9 +1986,10 @@
       @include screen-1400 {
         left: 12px;
       }
-      @include screen-1400 {
+      @include screen-1290 {
         left: 52px;
       }
+
       @include large-screen {
         display: none !important;
       }
@@ -1960,22 +2002,29 @@
 
   .prev-btn {
     z-index: 1;
-    right: 64px;
+    right: 90px;
     left: auto;
-    bottom: -34px;
+    bottom: 20px;
     top: auto;
+
+    @include screen-768 {
+      bottom: 10px;
+    }
   }
 
   .next-btn {
-    right: 12px;
+    right: 145px;
     left: auto;
-    bottom: -34px;
+    bottom: 20px;
     top: auto;
+    @include screen-768 {
+      bottom: 10px;
+    }
   }
 
   .slider-btn {
-    background: var(--white-color);
-    border: 1px solid var(--secondary-color-500);
+    // background: var(--white-color);
+    border: 1px solid $primary-color;
     padding: 8px;
 
     // @include screen-1400 {
@@ -1991,12 +2040,13 @@
       height: 24px;
 
       path {
-        fill: var(--secondary-color-500);
+        fill: $bg-white-1;
       }
     }
 
     &:hover {
-      background: var(--secondary-color-500);
+      // background: var(--secondary-color-500);
+      background-color: $primary-color;
 
       svg {
         fill: var(--white-color);
@@ -2009,11 +2059,11 @@
   }
 
   .testi-slider-wrapper-home-2 {
-    margin-left: 49px;
+    margin-left: 80px;
 
-    // @include screen-1200 {
-    //   margin-left: 0;
-    // }
+    @include large-screen {
+      margin-left: 0 !important;
+    }
   }
 
   .title-box-des {
