@@ -1,148 +1,164 @@
-.footers-section {
-  background-color: $primary-color;
-  overflow: hidden;
-}
-.wow1 {
-  position: absolute;
-  opacity: 0.1;
-  width: 100%;
-}
+// ma-footer-section
+.ma-footer-section {
+  padding-top: 110px;
 
-.footer-section {
-  padding-bottom: 10px;
-  .footer-tops {
-    padding-bottom: 50px;
+  background-color: var(--text-color-950);
+  @include large-screen {
+    padding-top: 80px;
+  }
+  @include screen-992 {
+    padding-top: 60px;
   }
 
-  .footer-section-row {
-    padding-left: 72px;
-    padding-right: 72px;
-    padding-top: 70px;
-    .footer-logo {
-      margin-bottom: 22px;
-      img {
-        width: 110px;
-        height: 40px;
-      }
-    }
-    .footer-social {
-      img {
-        padding-right: 12px;
-        @include large-screen {
-          padding-right: 5px;
-        }
-        @include screen-1060 {
-          padding-right: 2px;
-        }
-        @include screen-768 {
-          padding-right: 8px;
-        }
-      }
-    }
-    @include screen-768 {
-      p {
-        font-size: 16px;
-      }
-    }
-    .footer-links {
-      h5 {
-        color: $text-color;
-      }
-      hr {
-        color: $text-color;
-        border: 1px solid $text-color;
+  .single-foo-widget {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
 
-        display: inline-block;
-        width: 140px;
-      }
-      .footer-company-hr {
-        color: $text-color;
-        border: 1px solid $text-color;
-
-        display: inline-block;
-        width: 110px;
-      }
-      ul > li {
-        margin-bottom: 2px;
-        line-height: 37px;
-        font-weight: 300;
-        font-family: $footer-font;
-        font-style: normal;
-        a {
-          color: $text-color;
-          font-size: 18px;
-          &:hover {
-            color: $primary-color;
-          }
-        }
-      }
-      @include screen-768 {
-        h5 {
-          font-size: 20px;
-        }
-        ul > li {
-          a {
-            font-size: 16px;
-          }
-        }
-      }
-    }
-
-    .footer-contact {
-      h5 {
-        color: $text-color;
-      }
-      color: white;
-      .footer-contact-hr {
-        color: $text-color;
-        border: 1px solid $text-color;
-        display: inline-block;
-        width: 127px;
-      }
-      ul > li {
-        margin-bottom: 2px;
-        line-height: 37px;
-        font-weight: 300;
-        font-family: $footer-font;
-        font-style: normal;
-        color: $text-color;
-        font-size: 18px;
-
-        &:hover {
-          color: $primary-color;
-        }
-      }
-      @include screen-768 {
-        h5 {
-          font-size: 20px;
-        }
-        ul > li {
-          font-size: 16px;
-        }
-      }
-    }
-    @include portrait-phone {
-      padding-left: 32px;
-      padding-right: 32px;
+    @include screen-992 {
+      gap: 12px;
     }
   }
-  .bottom-footer-top-hr {
-    color: $text-color;
-    width: 100%;
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include screen-992 {
+      gap: 4px;
+    }
+
+    &.contact-list {
+      gap: 17px;
+
+      @include screen-992 {
+        gap: 9px;
+      }
+    }
+
+    li a {
+      color: var(--white-color);
+      font-size: 16px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%;
+      transition: var(--transition);
+
+      @include screen-992 {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: var(--secondary-color-700);
+      }
+    }
   }
-  .footer-bottom {
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
-    @include portrait-phone {
-      p {
+
+  h5 {
+    color: var(--white-color);
+    text-transform: capitalize;
+  }
+
+  .info-box {
+    span {
+      display: block;
+      color: var(--white-color);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%;
+
+      @include screen-992 {
         font-size: 14px;
       }
     }
   }
+
+  .list-with-icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include screen-992 {
+      gap: 12px;
+
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      color: var(--white-color);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%;
+
+      @include screen-992 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .divider {
+    margin-top: 110px;
+    width: 100%;
+    height: 1px;
+    background: #6b788e;
+    @include large-screen {
+      margin-top: 80px;
+    }
+    @include screen-992 {
+      margin-top: 60px;
+    }
+  }
+
+  .copyright-area {
+    padding: 48px 0;
+    text-align: center;
+
+    @include screen-992 {
+      padding: 24px 0;
+    }
+
+    p {
+      color: var(--white-color);
+      line-height: 160%;
+    }
+  }
 }
-p {
-  color: white;
-  font-size: 18px;
-  line-height: 1.6;
+
+.social-icons-wraper {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  .social-icon-link {
+    width: 32px;
+    height: 32px;
+
+    img {
+      width: 100%;
+      transition: var(--transition);
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 221px;
+  object-fit: contain;
+
+  @include screen-992 {
+    max-width: 180px;
+  }
 }
