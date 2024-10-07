@@ -26,6 +26,40 @@
   }
 }
 
+.pp-header-search-bar {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  width: 100%;
+  position: absolute;
+  top: 52px;
+  padding: 40px 0;
+  background: var(--white-color);
+
+  @include screen-992 {
+    padding: 20px 0;
+  }
+
+  .header-search-input {
+    padding-right: 50px;
+    border: none;
+  }
+
+  .fa-xmark {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: var(--danger-color-500);
+  }
+}
+
+/* Style for search bar container */
+
 .common-subtitle {
   color: $primary-color;
   // padding-top: 120px;
@@ -387,6 +421,7 @@
   }
   @include screen-992 {
     .hero-content {
+      margin-top: 0px;
       .hero-header {
         font-size: 50px;
       }
@@ -1028,6 +1063,14 @@
 .service-section {
   margin-top: 120px;
   margin-bottom: 120px;
+  @include large-screen {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  @include screen-992 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   .service-row {
     display: flex;
     flex-wrap: wrap;
@@ -1296,6 +1339,9 @@
       font-weight: 400;
       color: $bg-dark-1;
       max-width: 80%;
+      @include screen-768 {
+        max-width: 100%;
+      }
     }
   }
 

@@ -3,10 +3,79 @@
   margin-right: 0px !important;
 }
 
+.has-submenu {
+  position: relative;
+  display: inline-block;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px !important;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      color: #ff6b6b;
+    }
+  }
+
+  .has-submenu-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease;
+
+    svg path {
+      fill: #180207;
+      transition: fill 0.3s ease;
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 4px;
+    z-index: 999;
+
+    li {
+      padding: 0;
+
+      .dropdown-item {
+        text-decoration: none;
+        color: #333;
+        padding: 8px 15px;
+        display: block;
+
+        &:hover {
+          background-color: #f8f8f8;
+          color: #ff6b6b;
+        }
+      }
+    }
+  }
+
+  &:hover .dropdown-menu {
+    display: block;
+  }
+
+  &:hover .has-submenu-icon {
+    transform: rotate(180deg);
+
+    svg path {
+      fill: #ff6b6b; /* Color change on hover */
+    }
+  }
+}
+
 .header-section {
   position: relative;
   z-index: 1;
-  overflow: hidden;
+  // overflow: hidden;
   box-shadow: 0px 8px 36px 0px rgba(0, 0, 0, 0.1);
 
   @include screen-1400 {
@@ -228,6 +297,12 @@
         // }
       }
     }
+  }
+  @include screen-1290 {
+    padding-left: 20px !important;
+  }
+  @include screen-1060 {
+    padding-left: 10px !important;
   }
 }
 

@@ -10,6 +10,7 @@
   // border-radius: 12px;
   overflow: hidden;
   transition: $transition-base;
+
   @include screen-992 {
     padding: 14px 30px;
     font-size: 16px;
@@ -37,7 +38,7 @@
 
 .header-template-btn {
   padding: 12px 40px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   // text-transform: uppercase;
   position: relative;
@@ -46,6 +47,12 @@
   // border-radius: 12px;
   overflow: hidden;
   transition: $transition-base;
+  @include screen-1260 {
+    padding: 12px 30px;
+  }
+  @include screen-1120 {
+    padding: 12px 25px;
+  }
   @include portrait-phone {
     padding: 10px 15px;
     font-size: 14px;
@@ -608,7 +615,16 @@
 }
 
 .contact-btn-head {
-  padding-left: 40px;
+  padding-left: 35px;
+  @include screen-1400 {
+    padding-left: 25px;
+  }
+  @include screen-1290 {
+    padding-left: 12px;
+  }
+  @include screen-1060 {
+    padding-left: 6px;
+  }
 }
 
 .contact-btn {

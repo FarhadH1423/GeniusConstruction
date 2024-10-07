@@ -288,6 +288,14 @@
   //     }
   // });
 
+  $(".header-searchbar-opener").on("click", function () {
+    $(".pp-header-search-bar").addClass("active");
+  });
+
+  $(".header-searchbar-closer").on("click", function () {
+    $(".pp-header-search-bar").removeClass("active");
+  });
+
   //7. wow js
   new WOW().init();
 })(jQuery);
