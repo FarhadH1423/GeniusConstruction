@@ -6366,3 +6366,62 @@ p {
     .blog-details-row {
       padding-left: 10px;
       padding-right: 10px; } }
+
+.info-bar-2 {
+  background-color: #ff5e15; }
+
+.hero-section-2 {
+  padding-bottom: 0px !important;
+  position: relative;
+  overflow: hidden; }
+
+.hero-row-2 {
+  height: 746px !important; }
+
+.hero-image-wrapper .experience-wrapper {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: #ff5e15;
+  border: 2px solid #ffffff;
+  z-index: 2;
+  padding: 32px; }
+  .hero-image-wrapper .experience-wrapper h2 {
+    color: #ffffff;
+    margin-bottom: 4px; }
+  .hero-image-wrapper .experience-wrapper p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 0; }
+
+.image-container img {
+  width: 836px;
+  height: 807px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* Clip the image to a triangular shape */
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 37.66% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 37.66% 0%); }
+
+.image-container {
+  position: relative;
+  top: -60px;
+  z-index: 1;
+  right: 0px;
+  /* Push the image outside of the container */ }
+
+.background-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  /* Behind the content */
+  width: 100%;
+  max-width: 948px;
+  height: 807px;
+  overflow: hidden; }
+
+.background-shape svg {
+  width: 100%;
+  height: auto;
+  display: block; }
