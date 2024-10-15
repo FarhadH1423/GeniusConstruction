@@ -12,64 +12,241 @@
   padding-bottom: 0px !important;
   position: relative;
   overflow: hidden;
-}
 
-.hero-row-2 {
-  height: 746px !important;
-}
-
-.hero-image-wrapper {
-  // position: relative;
-  .experience-wrapper {
+  .hero-p {
+    padding-top: 10px;
+    width: 95%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    color: $bg-dark-1;
     position: absolute;
-    right: 0px;
-    bottom: 0px;
-    background-color: $primary-color;
-    border: 2px solid $bg-white-1;
-    z-index: 2;
-    padding: 32px;
-    h2 {
-      color: $bg-white-1;
-      margin-bottom: 4px;
+    margin-left: 0px !important;
+    &::before {
+      display: none;
     }
-    p {
-      color: $bg-white-1;
-      font-size: 16px;
-      margin-bottom: 0;
+  }
+
+  .hero-image-wrapper {
+    // position: relative;
+    .experience-wrapper {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      background-color: $primary-color;
+      border: 2px solid $bg-white-1;
+      z-index: 2;
+      padding: 32px;
+      h2 {
+        color: $bg-white-1;
+        margin-bottom: 4px;
+      }
+      p {
+        color: $bg-white-1;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+      @include screen-1290 {
+        padding: 20px;
+        h2 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      @include screen-992 {
+        display: none !important;
+      }
+    }
+  }
+
+  .image-container img {
+    width: 836px;
+    height: 807px;
+    object-fit: cover;
+    /* Clip the image to a triangular shape */
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 37.66% 0%);
+  }
+
+  .image-container {
+    position: relative;
+    top: -60px;
+    z-index: 1;
+    // z-index: 2; /* Bring the image in front */
+    right: 0px; /* Push the image outside of the container */
+    // width: 600px; /* Adjust the width to match the desired size */
+  }
+
+  .background-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0; /* Behind the content */
+    width: 100%;
+    max-width: 948px;
+    height: 807px;
+    overflow: hidden;
+  }
+
+  .background-shape svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  @include screen-1800 {
+    .background-shape {
+      right: -60px;
+    }
+  }
+  @include screen-1700 {
+    .background-shape {
+      right: -80px;
+    }
+  }
+  @include screen-1650 {
+    .background-shape {
+      right: -100px;
+    }
+    .image-container {
+      right: 20px;
+    }
+  }
+  @include screen-1600 {
+    .background-shape {
+      right: -98px;
+    }
+    .image-container {
+      right: 55px;
+    }
+  }
+  @include screen-1520 {
+    .background-shape {
+      right: -115px;
+    }
+    .image-container {
+      right: 80px;
+    }
+  }
+  @include screen-1460 {
+    .background-shape {
+      right: -138px;
+    }
+    .image-container {
+      right: 100px;
+    }
+  }
+  @include screen-1400 {
+    .background-shape {
+      right: -165px;
+    }
+    .image-container {
+      right: 125px;
+    }
+  }
+  @include screen-1350 {
+    .background-shape {
+      right: -195px;
+    }
+    .image-container {
+      right: 126px;
+    }
+    .image-container img {
+      width: 806px;
+      height: 810px;
+    }
+  }
+  @include screen-1290 {
+    .background-shape {
+      right: -230px;
+    }
+    .image-container {
+      right: 108px;
+    }
+    .image-container img {
+      width: 806px;
+      height: 810px;
+    }
+  }
+  @include screen-1260 {
+    .background-shape {
+      right: -235px;
+      height: 760px;
+    }
+    .image-container {
+      right: 122px;
+    }
+    .image-container img {
+      width: 775px;
+      height: 760px;
+    }
+  }
+  @include large-screen {
+    .background-shape {
+      right: -265px;
+    }
+    .image-container {
+      right: 120px;
+    }
+    .image-container img {
+      width: 760px;
+      height: 760px;
+    }
+  }
+  @include screen-1120 {
+    .background-shape {
+      right: -278px;
+    }
+    .image-container {
+      right: 132px;
+    }
+    .image-container img {
+      width: 725px;
+      height: 710px;
+    }
+  }
+  @include screen-1060 {
+    .background-shape {
+      right: -325px;
+    }
+    .image-container {
+      right: 107px;
+    }
+    .image-container img {
+      width: 716px;
+      height: 710px;
+    }
+  }
+  @include screen-992 {
+    .background-shape {
+      display: none;
+    }
+    .image-container {
+      display: none;
+    }
+    .image-container img {
+      width: 716px;
+      height: 710px;
     }
   }
 }
 
-.image-container img {
-  width: 836px;
-  height: 807px;
-  object-fit: cover;
-  /* Clip the image to a triangular shape */
-  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 37.66% 0%);
-}
-
-.image-container {
-  position: relative;
-  top: -60px;
-  z-index: 1;
-  // z-index: 2; /* Bring the image in front */
-  right: 0px; /* Push the image outside of the container */
-  // width: 600px; /* Adjust the width to match the desired size */
-}
-
-.background-shape {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0; /* Behind the content */
-  width: 100%;
-  max-width: 948px;
-  height: 807px;
-  overflow: hidden;
-}
-
-.background-shape svg {
-  width: 100%;
-  height: auto;
-  display: block;
+.hero-row-2 {
+  height: 746px !important;
+  @include screen-1260 {
+    height: 700px !important;
+  }
+  @include screen-1260 {
+    height: 650px !important;
+  }
+  @include screen-992 {
+    height: 450px !important;
+  }
+  @include screen-460 {
+    height: 500px !important;
+  }
+  @include screen-400 {
+    height: 600px !important;
+  }
 }

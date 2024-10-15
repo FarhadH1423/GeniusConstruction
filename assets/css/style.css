@@ -6374,54 +6374,174 @@ p {
   padding-bottom: 0px !important;
   position: relative;
   overflow: hidden; }
+  .hero-section-2 .hero-p {
+    padding-top: 10px;
+    width: 95%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    color: #030712;
+    position: absolute;
+    margin-left: 0px !important; }
+    .hero-section-2 .hero-p::before {
+      display: none; }
+  .hero-section-2 .hero-image-wrapper .experience-wrapper {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #ff5e15;
+    border: 2px solid #ffffff;
+    z-index: 2;
+    padding: 32px; }
+    .hero-section-2 .hero-image-wrapper .experience-wrapper h2 {
+      color: #ffffff;
+      margin-bottom: 4px; }
+    .hero-section-2 .hero-image-wrapper .experience-wrapper p {
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 0; }
+    @media (max-width: 1290px) {
+      .hero-section-2 .hero-image-wrapper .experience-wrapper {
+        padding: 20px; }
+        .hero-section-2 .hero-image-wrapper .experience-wrapper h2 {
+          font-size: 32px; }
+        .hero-section-2 .hero-image-wrapper .experience-wrapper p {
+          font-size: 14px; } }
+    @media (max-width: 991.98px) {
+      .hero-section-2 .hero-image-wrapper .experience-wrapper {
+        display: none !important; } }
+  .hero-section-2 .image-container img {
+    width: 836px;
+    height: 807px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* Clip the image to a triangular shape */
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 37.66% 0%);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 37.66% 0%); }
+  .hero-section-2 .image-container {
+    position: relative;
+    top: -60px;
+    z-index: 1;
+    right: 0px;
+    /* Push the image outside of the container */ }
+  .hero-section-2 .background-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    /* Behind the content */
+    width: 100%;
+    max-width: 948px;
+    height: 807px;
+    overflow: hidden; }
+  .hero-section-2 .background-shape svg {
+    width: 100%;
+    height: auto;
+    display: block; }
+  @media (max-width: 1800px) {
+    .hero-section-2 .background-shape {
+      right: -60px; } }
+  @media (max-width: 1700px) {
+    .hero-section-2 .background-shape {
+      right: -80px; } }
+  @media (max-width: 1650px) {
+    .hero-section-2 .background-shape {
+      right: -100px; }
+    .hero-section-2 .image-container {
+      right: 20px; } }
+  @media (max-width: 1600px) {
+    .hero-section-2 .background-shape {
+      right: -98px; }
+    .hero-section-2 .image-container {
+      right: 55px; } }
+  @media (max-width: 1520px) {
+    .hero-section-2 .background-shape {
+      right: -115px; }
+    .hero-section-2 .image-container {
+      right: 80px; } }
+  @media (max-width: 1460px) {
+    .hero-section-2 .background-shape {
+      right: -138px; }
+    .hero-section-2 .image-container {
+      right: 100px; } }
+  @media (max-width: 1399.98px) {
+    .hero-section-2 .background-shape {
+      right: -165px; }
+    .hero-section-2 .image-container {
+      right: 125px; } }
+  @media (max-width: 1350px) {
+    .hero-section-2 .background-shape {
+      right: -195px; }
+    .hero-section-2 .image-container {
+      right: 126px; }
+    .hero-section-2 .image-container img {
+      width: 806px;
+      height: 810px; } }
+  @media (max-width: 1290px) {
+    .hero-section-2 .background-shape {
+      right: -230px; }
+    .hero-section-2 .image-container {
+      right: 108px; }
+    .hero-section-2 .image-container img {
+      width: 806px;
+      height: 810px; } }
+  @media (max-width: 1260px) {
+    .hero-section-2 .background-shape {
+      right: -235px;
+      height: 760px; }
+    .hero-section-2 .image-container {
+      right: 122px; }
+    .hero-section-2 .image-container img {
+      width: 775px;
+      height: 760px; } }
+  @media (max-width: 1199.98px) {
+    .hero-section-2 .background-shape {
+      right: -265px; }
+    .hero-section-2 .image-container {
+      right: 120px; }
+    .hero-section-2 .image-container img {
+      width: 760px;
+      height: 760px; } }
+  @media (max-width: 1119.98px) {
+    .hero-section-2 .background-shape {
+      right: -278px; }
+    .hero-section-2 .image-container {
+      right: 132px; }
+    .hero-section-2 .image-container img {
+      width: 725px;
+      height: 710px; } }
+  @media (max-width: 1059.98px) {
+    .hero-section-2 .background-shape {
+      right: -325px; }
+    .hero-section-2 .image-container {
+      right: 107px; }
+    .hero-section-2 .image-container img {
+      width: 716px;
+      height: 710px; } }
+  @media (max-width: 991.98px) {
+    .hero-section-2 .background-shape {
+      display: none; }
+    .hero-section-2 .image-container {
+      display: none; }
+    .hero-section-2 .image-container img {
+      width: 716px;
+      height: 710px; } }
 
 .hero-row-2 {
   height: 746px !important; }
-
-.hero-image-wrapper .experience-wrapper {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  background-color: #ff5e15;
-  border: 2px solid #ffffff;
-  z-index: 2;
-  padding: 32px; }
-  .hero-image-wrapper .experience-wrapper h2 {
-    color: #ffffff;
-    margin-bottom: 4px; }
-  .hero-image-wrapper .experience-wrapper p {
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 0; }
-
-.image-container img {
-  width: 836px;
-  height: 807px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  /* Clip the image to a triangular shape */
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 37.66% 0%);
-  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 37.66% 0%); }
-
-.image-container {
-  position: relative;
-  top: -60px;
-  z-index: 1;
-  right: 0px;
-  /* Push the image outside of the container */ }
-
-.background-shape {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  /* Behind the content */
-  width: 100%;
-  max-width: 948px;
-  height: 807px;
-  overflow: hidden; }
-
-.background-shape svg {
-  width: 100%;
-  height: auto;
-  display: block; }
+  @media (max-width: 1260px) {
+    .hero-row-2 {
+      height: 700px !important; } }
+  @media (max-width: 1260px) {
+    .hero-row-2 {
+      height: 650px !important; } }
+  @media (max-width: 991.98px) {
+    .hero-row-2 {
+      height: 450px !important; } }
+  @media (max-width: 460px) {
+    .hero-row-2 {
+      height: 500px !important; } }
+  @media (max-width: 400px) {
+    .hero-row-2 {
+      height: 600px !important; } }
